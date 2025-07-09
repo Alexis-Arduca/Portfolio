@@ -4,46 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alexis - Portfolio Développeur Jeux Vidéo</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWixZiV8g8V1Nk6sZe4H1gP4n2J2gMxe5Y/jY6W0QbG7v/s5f7z7L3oZ7v7w7v7w7v7w7v7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="components/navbar/navbar.css" />
+  <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <header>
-    <h1>Alexis — Développeur Jeux Vidéo</h1>
-    <p>Passionné Unity | C# | Création de jeux</p>
-    <div id="language-selector">
-        <button onclick="setLanguage('fr')">FR</button>
-        <button onclick="setLanguage('en')">EN</button>
-    </div>
+  <header id="navbar-container">
+    <nav class="navbar"></nav>
   </header>
 
-  <section id="projects">
-    <h2 id="projects-title"></h2>
-
-    <div class="project-card">
-        <h3>Little Monsters</h3>
-        <img src="assets/game.gif" alt="Gameplays" />
-
-        <div id="project1-description"></div>
-
-        <!-- Links Part (for Code and Game) -->
-        <a href="https://github.com/Alexis-Arduca/MonsterProject" target="_blank">Voir le code</a>
-        <a href="https://mega.nz/file/tNBxHJTZ#_a3Efl-kOxeu3JKpo1m79A7cNCCtZ4Ji0Y-xAHPMxjo" target="_blank">Télécharger le build</a>
+  <section id="landing" class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <h1 class="hero-title fade-in">
+        <span data-lang-key="heroTitleName">Alexis</span>
+        <span data-lang-key="heroTitlePortfolio">Portfolio</span>
+      </h1>
+      <p class="hero-tagline fade-in" data-lang-key="heroTagline">Création de mondes immersifs avec Unity & C#</p>
+      <div class="hero-cta fade-in">
+        <a href="pages/projects.html" class="btn primary">Voir mes projets</a>
+        <a href="pages/contact.html" class="btn secondary">Me contacter</a>
+      </div>
+      <div class="hero-about fade-in" data-lang-array="heroAbout">
+        <p>Salut, je suis Alexis, un développeur de jeux vidéo passionné, spécialisé dans Unity et C#.</p>
+        <p>Inspiré par des titres comme <b>The Legend of Zelda</b>, j'aime concevoir des mécaniques captivantes et des expériences immersives pour mes projets personnels. Découvrez mes projets !</p>
+      </div>
+      <div class="hero-stats fade-in">
+        <div class="stat">
+          <span class="stat-number" data-lang-key="statExperience">3+</span>
+          <span class="stat-label" data-lang-key="statExperienceLabel">Années d'expérience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-lang-key="statProjects">10+</span>
+          <span class="stat-label" data-lang-key="statProjectsLabel">Projets réalisés</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-lang-key="statSkills">Unity & C#</span>
+          <span class="stat-label" data-lang-key="statSkillsLabel">Compétences principales</span>
+        </div>
+      </div>
     </div>
-    </section>
-
-
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Étudiant à Epitech, passionné par le développement de jeux vidéo en Unity.</p>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : alexis.arduca@epitech.eu</p>
-    <p>GitHub : <a href="https://github.com/Alexis-Arduca" target="_blank">Fizzey</a></p>
-    <p>LinkedIn : <a href="https://www.linkedin.com/in/alexis-arduca-2166a0235/" target="_blank">Alexis</a></p>
-  </section>
-
-  <script src="script.js"></script>
+  <script src="components/navbar/navbar.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
