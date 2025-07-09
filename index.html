@@ -10,19 +10,27 @@
   <header>
     <h1>Alexis — Développeur Jeux Vidéo</h1>
     <p>Passionné Unity | C# | Création de jeux</p>
+    <div id="language-selector">
+        <button onclick="setLanguage('fr')">FR</button>
+        <button onclick="setLanguage('en')">EN</button>
+    </div>
   </header>
 
   <section id="projects">
-    <h2>Mes projets</h2>
+    <h2 id="projects-title"></h2>
+
     <div class="project-card">
-      <h3>Nom du Jeu</h3>
-      <img src="assets/game.gif" alt="Gameplays" />
-      <p>Petit descriptif du jeu.</p>
-      <!-- <a href="builds/monjeu.zip" download>Télécharger le build</a> -->
-      <!-- <a href="https://github.com/code" target="_blank">Voir le code</a> -->
+        <h3>Little Monsters</h3>
+        <img src="assets/game.gif" alt="Gameplays" />
+
+        <div id="project1-description"></div>
+
+        <!-- Links Part (for Code and Game) -->
+        <a href="https://github.com/Alexis-Arduca/MonsterProject" target="_blank">Voir le code</a>
+        <a href="https://mega.nz/file/tNBxHJTZ#_a3Efl-kOxeu3JKpo1m79A7cNCCtZ4Ji0Y-xAHPMxjo" target="_blank">Télécharger le build</a>
     </div>
-    <!-- Ajoute plus de projets ici -->
-  </section>
+    </section>
+
 
   <section id="about">
     <h2>À propos</h2>
@@ -32,8 +40,8 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Email : alexis.arduca@epitech.eu</p>
-    <p>GitHub : <a href="https://github.com/Alexis-Arduca" target="_blank"></a></p>
-    <p>LinkedIn : <a href="https://www.linkedin.com/in/alexis-arduca-2166a0235/" target="_blank"></a></p>
+    <p>GitHub : <a href="https://github.com/Alexis-Arduca" target="_blank">Fizzey</a></p>
+    <p>LinkedIn : <a href="https://www.linkedin.com/in/alexis-arduca-2166a0235/" target="_blank">Alexis</a></p>
   </section>
 
   <script src="script.js"></script>
