@@ -67,6 +67,7 @@ body {
 }
 
 .quality-card {
+  text-align: center;
   background: #2a3435;
   padding: 1.5rem;
   border-radius: 8px;
@@ -157,8 +158,8 @@ body {
   }
 }
 
-.internship-section .section-content {
-  text-align: center;
+.internship-section .section-content > p {
+  text-align: left;
 }
 
 .internship-grid {
@@ -169,6 +170,7 @@ body {
 }
 
 .internship-card {
+  text-align: center;
   background: #2a3435;
   padding: 1.5rem;
   border-radius: 8px;
@@ -195,6 +197,17 @@ body {
   color: #b0bec5;
   line-height: 1.6;
 }
+
+.internship-section .cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.internship-section .section-content .cta-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 
 .cta-button {
   display: inline-block;
