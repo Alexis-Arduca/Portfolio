@@ -238,3 +238,106 @@ body {
     font-size: 1.3rem;
   }
 }
+
+.featured-main-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  color: #4a90e2;
+  text-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+  margin-bottom: 0.5rem;
+}
+
+.featured-card {
+  background: #2a3435;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(74, 144, 226, 0.4);
+}
+
+.featured-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.featured-poster {
+  flex: 1;
+  max-width: 50%;
+}
+
+.featured-poster img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
+}
+
+.featured-content {
+  flex: 1;
+  text-align: left;
+}
+
+.featured-title {
+  font-family: 'Cinzel', 'Times New Roman', serif;
+  font-size: 1.5rem;
+  color: #4a90e2;
+  text-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+  margin-bottom: 0.5rem;
+}
+
+.featured-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  color: #b0bec5;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .featured-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-poster {
+    max-width: 100%;
+  }
+
+  .featured-content {
+    text-align: center;
+  }
+
+  .featured-title {
+    font-size: 1.3rem;
+  }
+
+  .featured-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-card {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .featured-title {
+    font-size: 1.2rem;
+  }
+
+  .featured-description {
+    font-size: 0.85rem;
+  }
+}
