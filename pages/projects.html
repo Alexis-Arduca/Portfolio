@@ -14,87 +14,311 @@
   </header>
 
   <main>
-    <h2 data-lang-key="projectsTitle">Mes projets</h2>
-    <!-- Little Monsters Card -->
-    <div class="project-card">
-      <div class="project-media">
-        <img src="../assets/projects/little_monsters/Poster.jpg" alt="Poster Little Monsters"/>
-        <p>By: Mark Hoffman</p>
+    <h2 data-lang-key="projectsTitle">Mes Projets</h2>
+    <p class="section-intro">Découvrez mes réalisations en développement de jeux vidéo et programmation bas niveau, réalisées dans le cadre de mes études à Epitech et Saxion University.</p>
+
+    <!-- Filtres -->
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all" aria-label="Afficher tous les projets">Tous</button>
+      <button class="filter-btn" data-filter="unity" aria-label="Afficher les projets Unity">Unity</button>
+      <button class="filter-btn" data-filter="cpp" aria-label="Afficher les projets C/C++">C/C++</button>
+    </div>
+
+    <!-- Section Unity -->
+    <section class="category-section" data-category="unity">
+      <h3 class="category-title">Projets Unity</h3>
+      <div class="projects-grid">
+        <div class="project-card compact" data-project-id="little_monsters">
+          <img src="../assets/projects/little_monsters/Poster.jpg" alt="Poster Little Monsters" />
+          <h4>Little Monsters</h4>
+          <p>Jeu Unity pour enfants avec IA et interactions dynamiques.</p>
+          <a href="#" class="btn primary" data-modal-trigger="little_monsters">En savoir plus</a>
+        </div>
+        <div class="project-card compact" data-project-id="shenanigans">
+          <img src="../assets/projects/shenanigans/Poster.png" alt="Poster Shenanigans" />
+          <h4>Shenanigans</h4>
+          <p>Jeu multijoueur Unity avec dessin via caméra et gyroscope.</p>
+          <a href="#" class="btn primary" data-modal-trigger="shenanigans">En savoir plus</a>
+        </div>
+        <div class="project-card compact" data-project-id="chasing_echoes">
+          <img src="../assets/projects/chasing_echoes/Poster.jpg" alt="Poster Chasing Echoes" />
+          <h4>Chasing Echoes</h4>
+          <p>Jeu Unity sensibilisant aux feux de forêt via mini-jeux.</p>
+          <a href="#" class="btn primary" data-modal-trigger="chasing_echoes">En savoir plus</a>
+        </div>
       </div>
-      <div class="project-details">
-        <h3 data-lang-key="project1Title">Little Monsters</h3>
-        <div class="gif-frame">
-          <img src="../assets/projects/little_monsters/item_give.gif" alt="item-gif" />
-          <img src="../assets/projects/little_monsters/monsters.gif" alt="monsters-gif" />
+    </section>
+
+    <!-- Section C/C++ -->
+    <section class="category-section" data-category="cpp">
+      <h3 class="category-title">Projets C/C++</h3>
+      <div class="projects-grid">
+        <div class="project-card compact" data-project-id="arcade">
+          <h4>Arcade</h4>
+          <p>Jeu d'arcade en C++ avec bascule dynamique entre bibliothèques graphiques en cours de partie.</p>
+          <a href="#" class="btn primary" data-modal-trigger="arcade">En savoir plus</a>
         </div>
-        <div class="project-description" data-lang-array="project1Description">
-          <p>Ce jeu a été réalisé avec le moteur Unity dans le cadre d'un projet de groupe à Saxion University of Applied Sciences, aux Pays-Bas.</p>
-          <p>J'ai travaillé aux côtés de game designers et artistes 2D/3D pour créer un jeu destiné à un jeune public, en m'appuyant sur des créatures imaginées par des enfants dans une école partenaire.</p>
-          <p>L'objectif était de concevoir un jeu amusant et accessible, fidèle à l'univers inventé par les enfants, tout en proposant une expérience ludique et cohérente.</p>
-          <p>En tant que développeur Unity, j'ai assuré la programmation du gameplay, l'intégration des animations des monstres 3D ainsi que leur ia, la mise en place des interactions avec le monde et l'apparition aléatoire des monstres dans leurs biomes respectifs. Ce projet m'a permis de développer mes compétences en travail en équipe interdisciplinaire et en adaptation à une cible spécifique.</p>
+        <div class="project-card compact" data-project-id="arcade">
+          <h4>Zappy</h4>
+          <p>Jeu en réseau en C (serveur), C++/Raylib (client) et Python3 (IA), axé sur la collecte de ressources.</p>
+          <a href="#" class="btn primary" data-modal-trigger="zappy">En savoir plus</a>
         </div>
-        <div class="project-links">
-          <a href="https://mega.nz/file/tNBxHJTZ#_a3Efl-kOxeu3JKpo1m79A7cNCCtZ4Ji0Y-xAHPMxjo" download data-lang-key="project1Download">Build Windows</a>
-          <a href="https://github.com/Alexis-Arduca/MonsterProject" target="_blank" data-lang-key="project1Code">Voir le code</a>
+        <div class="project-card compact" data-project-id="arcade">
+          <h4>42sh</h4>
+          <p>Reproduction de shell UNIX en C, interpréteur de commandes pour systèmes UNIX, compilé via Makefile.</p>
+          <a href="#" class="btn primary" data-modal-trigger="shell">En savoir plus</a>
+        </div>
+        <div class="project-card compact" data-project-id="arcade">
+          <h4>Tetris</h4>
+          <p>Jeu Tetris en C avec la bibliothèque ncurses pour une interface en terminal UNIX, compilé via Makefile.</p>
+          <a href="#" class="btn primary" data-modal-trigger="tetris">En savoir plus</a>
+        </div>
+        <div class="project-card compact" data-project-id="arcade">
+          <h4>Zelda Rogue</h4>
+          <p>Zelda Rogue en C++, jeu tour par tour inspiré de Pokerogue dans l'univers de Zelda, avec la librairie graphique SFML.</p>
+          <a href="#" class="btn primary" data-modal-trigger="zeldarogue">En savoir plus</a>
+        </div>
+        <div class="project-card compact" data-project-id="arcade">
+          <h4>ASM MiniLibC</h4>
+          <p>MiniLibC en ASM, implémentation de fonctions C de base (strlen, strchr, strcasecmp) pour systèmes UNIX.</p>
+          <a href="#" class="btn primary" data-modal-trigger="asm">En savoir plus</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modales Unity -->
+    <div class="modal" id="modal-little_monsters">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">×</span>
+        <div class="modal-header">
+          <h4>Little Monsters</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="../assets/projects/little_monsters/Poster.jpg" alt="Poster Little Monsters" />
+            <p>By: Mark Hoffman</p>
+          </div>
+          <div class="modal-details">
+            <div class="gif-frame">
+              <img src="../assets/projects/little_monsters/item_give.gif" alt="Item Give GIF" />
+              <img src="../assets/projects/little_monsters/monsters.gif" alt="Monsters GIF" />
+            </div>
+            <div class="project-description" data-lang-array="project1Description">
+              <p>Ce jeu a été réalisé avec le moteur Unity dans le cadre d'un projet de groupe à Saxion University of Applied Sciences, aux Pays-Bas.</p>
+              <p>J'ai travaillé aux côtés de game designers et artistes 2D/3D pour créer un jeu destiné à un jeune public, en m'appuyant sur des créatures imaginées par des enfants dans une école partenaire.</p>
+              <p>L'objectif était de concevoir un jeu amusant et accessible, fidèle à l'univers inventé par les enfants, tout en proposant une expérience ludique et cohérente.</p>
+              <p>En tant que développeur Unity, j'ai assuré la programmation du gameplay, l'intégration des animations des monstres 3D ainsi que leur IA, la mise en place des interactions avec le monde et l'apparition aléatoire des monstres dans leurs biomes respectifs. Ce projet m'a permis de développer mes compétences en travail en équipe interdisciplinaire et en adaptation à une cible spécifique.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://mega.nz/file/tNBxHJTZ#_a3Efl-kOxeu3JKpo1m79A7cNCCtZ4Ji0Y-xAHPMxjo" download>Build Windows</a>
+              <a href="https://github.com/Alexis-Arduca/MonsterProject" target="_blank">Voir le code</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Shenanigans Card -->
-    <div class="project-card">
-      <div class="project-media">
-        <img src="../assets/projects/shenanigans/Poster.png" alt="Poster Shenanigans" width="300" />
-        <p>By: Mia Roof</p>
-      </div>
-      <div class="project-details">
-        <h3 data-lang-key="project1Title">Shenanigans</h3>
-        <div class="gif-frame">
-            <img src="../assets/projects/shenanigans/lobby.gif" alt="lobby-gif" />
-            <img src="../assets/projects/shenanigans/game.gif" alt="game-gif" />
+    <div class="modal" id="modal-shenanigans">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">×</span>
+        <div class="modal-header">
+          <h4>Shenanigans</h4>
         </div>
-
-        <div class="project-description" data-lang-array="project1Description">
-            <p>Ce jeu a été réalisé avec le moteur Unity dans le cadre d'un projet de groupe à Saxion University of Applied Sciences, aux Pays-Bas.</p>
-            <p>J'ai collaboré avec des game designers et des artistes pour développer un jeu multijoueur (3 joueurs) utilisant les fonctionnalités de la caméra et du gyroscope des appareils mobiles, avec un PC comme hôte.</p>
-            <p>L'objectif était de créer une expérience amusante et créative où chaque joueur, muni de son téléphone, reçoit un thème et une partie du corps (tête, corps, jambes) à dessiner simultanément via la caméra du téléphone pendant un temps limité. Le PC héberge la partie et affiche le rendu final en combinant les dessins pour former une créature unique, mettant l'accent sur le plaisir et la créativité sans compétition. De plus, le jeu propose un mode dessin dans le lobby, où les joueurs utilisent le gyroscope du téléphone pour dessiner à l'aide d'une boule en attendant que tous les joueurs rejoignent la partie.</p>
-            <p>En tant que développeur Unity, j'ai implémenté la mécanique de dessin via le téléphone, la synchronisation multijoueur entre les appareils mobiles et le PC, ainsi que l'assemblage des dessins en temps réel sur l'hôte. Ce projet m'a permis de renforcer mes compétences en programmation mobile, en gestion de fonctionnalités réseau et capteurs, et en travail d'équipe interdisciplinaire.</p> 
-        </div>
-        <div class="project-links">
-          <a href="https://mega.nz/file/AYoHQKBa#zL8khlhSUmtNPt_YVQxY-xyde-9HLObSseonTUIirow" download data-lang-key="project1Download">Build Windows</a>
-          <a href="https://mega.nz/file/QYhHCJaY#OZ3ZEqEfiadnK_NSL11ODzogTJnRiVCfqyzDQLAQ8tQ" download data-lang-key="project1Download">Build Android</a>
-          <a href="https://github.com/Alexis-Arduca/Shenanigans" target="_blank" data-lang-key="project1Code">Voir le code</a>
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="../assets/projects/shenanigans/Poster.png" alt="Poster Shenanigans" />
+            <p>By: Mia Roof</p>
+          </div>
+          <div class="modal-details">
+            <div class="gif-frame">
+              <img src="../assets/projects/shenanigans/lobby.gif" alt="Lobby GIF" />
+              <img src="../assets/projects/shenanigans/game.gif" alt="Game GIF" />
+            </div>
+            <div class="project-description" data-lang-array="project2Description">
+              <p>Ce jeu a été réalisé avec le moteur Unity dans le cadre d'un projet de groupe à Saxion University of Applied Sciences, aux Pays-Bas.</p>
+              <p>J'ai collaboré avec des game designers et des artistes pour développer un jeu multijoueur (3 joueurs) utilisant les fonctionnalités du gyroscope des appareils mobiles, avec un PC comme hôte.</p>
+              <p>L'objectif était de créer une expérience amusante et créative où chaque joueur, muni de son téléphone, reçoit un thème et une partie du corps (tête, corps, jambes) à dessiner pendant un temps limité. Le PC héberge la partie et affiche le rendu final en combinant les dessins pour former une créature unique, mettant l'accent sur le plaisir et la créativité sans compétition.</p>
+              <p>En tant que développeur Unity, j'ai implémenté la mécanique de dessin via le téléphone, la synchronisation multijoueur entre les appareils mobiles et le PC, ainsi que l'assemblage des dessins en temps réel sur l'hôte. Ce projet m'a permis de renforcer mes compétences en programmation mobile, en gestion de fonctionnalités réseau et capteurs, et en travail d'équipe interdisciplinaire.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://mega.nz/file/AYoHQKBa#zL8khlhSUmtNPt_YVQxY-xyde-9HLObSseonTUIirow" download>Build Windows</a>
+              <a href="https://mega.nz/file/QYhHCJaY#OZ3ZEqEfiadnK_NSL11ODzogTJnRiVCfqyzDQLAQ8tQ" download>Build Android</a>
+              <a href="https://github.com/Alexis-Arduca/Shenanigans" target="_blank">Voir le code</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Chasing Echoes -->
-    <div class="project-card">
-      <div class="project-media">
-        <img src="../assets/projects/chasing_echoes/Poster.jpg" alt="Poster Shenanigans" width="300" />
-        <p>By: Mark Hoffman</p>
+    <div class="modal" id="modal-chasing_echoes">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">×</span>
+        <div class="modal-header">
+          <h4>Chasing Echoes</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-media">
+            <img src="../assets/projects/chasing_echoes/Poster.jpg" alt="Poster Chasing Echoes" />
+            <p>By: Mark Hoffman</p>
+          </div>
+          <div class="modal-details">
+            <div class="gif-frame">
+              <img src="../assets/projects/chasing_echoes/color_link.gif" alt="Color Link GIF" />
+              <img src="../assets/projects/chasing_echoes/path_game.gif" alt="Path Game GIF" />
+            </div>
+            <div class="project-description" data-lang-array="project3Description">
+              <p>Ce jeu a été réalisé avec le moteur Unity dans le cadre d'un projet de groupe à Saxion University of Applied Sciences, aux Pays-Bas.</p>
+              <p>Le but de notre projet était de sensibiliser à la prévention des feux de forêt à travers une expérience interactive engageante.</p>
+              <p>Le joueur incarne un employé d'une tour de guet forestière, chargé de surveiller les environs en période de crise. Des appels de détresse proviennent de personnes perdues dans la forêt, menacées par un incendie en progression. Le joueur doit répondre à ces appels et aider les survivants en leur fournissant des instructions, à travers des mini-jeux variés.</p>
+              <p>En tant que développeur Unity, j'ai participé à l'intégration des mini-jeux, à la logique de réception et de traitement des appels, ainsi qu'à la gestion de la progression de l'incendie dans la carte. Ce projet m'a permis de renforcer mes compétences en gameplay design, en narration interactive et en gestion de flux de jeu dynamique.</p>
+            </div>
+            <div class="project-links">
+              <a href="https://mega.nz/file/FBxlSQ7I#Kn7697fwo9rU5vl-lOkMgHGGi_ZnakL9k4C7NRB35EA" download>Build Windows</a>
+              <a href="https://github.com/Alexis-Arduca/Project-Start-Up" target="_blank">Voir le code</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="project-details">
-        <h3 data-lang-key="project1Title">Chasing Echoes</h3>
-        <div class="gif-frame">
-            <img src="../assets/projects/chasing_echoes/color_link.gif" alt="color-link-gif" />
-            <img src="../assets/projects/chasing_echoes/path_game.gif" alt="path-game-gif" />
+    </div>
+
+    <!-- Modales C/C++ -->
+    <div class="modal" id="modal-arcade">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">×</span>
+        <div class="modal-header">
+          <h4>Arcade</h4>
         </div>
-        <div class="project-description" data-lang-array="project1Description">
-            <p>Ce jeu a été réalisé avec le moteur Unity dans le cadre d'un projet de groupe à Saxion University of Applied Sciences, aux Pays-Bas.</p>
-            <p>Le but de notre projet était de sensibiliser à la prévention des feux de forêt à travers une expérience interactive engageante.</p>
-            <p>Le joueur incarne un employé d'une tour de guet forestière, chargé de surveiller les environs en période de crise. Des appels de détresse proviennent de personnes perdues dans la forêt, menacées par un incendie en progression. Le joueur doit répondre à ces appels et aider les survivants en leur fournissant des instructions, à travers des mini-jeux variés.</p>
-            <p>L'objectif principal est de sauver le plus de personnes possible avant que le feu ne se propage trop largement ou que trop de personne succombe à ce dernier, tout en gérant la pression du temps et la complexité croissante des demandes.</p>
-            <p>En tant que développeur Unity, j'ai participé à l'intégration des mini-jeux, à la logique de réception et de traitement des appels, ainsi qu'à la gestion de la progression de l'incendie dans la carte. Ce projet m'a permis de renforcer mes compétences en gameplay design, en narration interactive et en gestion de flux de jeu dynamique.</p>
+        <div class="modal-body">
+          <div class="modal-details">
+            <!-- <div class="gif-frame">
+              <img src="../assets/projects/little_monsters/item_give.gif" alt="Item Give GIF" />
+              <img src="../assets/projects/little_monsters/monsters.gif" alt="Monsters GIF" />
+            </div> -->
+            <div class="project-description" data-lang-array="project1Description">
+              <p>Ce projet a été réalisé en C++ dans le cadre de ma deuxième année à Epitech.</p>
+              <p>J'ai collaboré avec une équipe d'étudiant de ma promotion pour développer un jeu d'arcade fonctionnant avec des bibliothèques graphiques interchangeables.</p>
+              <p>L'objectif était de créer une expérience fluide permettant de basculer dynamiquement entre différentes bibliothèques graphiques tel que SFML, Stdlib et ncurses, en cours de partie, tout en maintenant une jouabilité stable.</p>
+              <p>En tant que développeur C++, j'ai implémenté la logique de gestion des bibliothèques graphiques, les transitions dynamiques, la gestion des fonctionnalités et des mécaniques du jeu et la sauvegarde de record propre au jeu. Ce projet m'a permis de renforcer mes compétences en programmation bas niveau et en modularité logicielle.</p>  
+            </div>
+          </div>
         </div>
-        <div class="project-links">
-          <a href="https://mega.nz/file/FBxlSQ7I#Kn7697fwo9rU5vl-lOkMgHGGi_ZnakL9k4C7NRB35EA" download data-lang-key="project1Download">Build Windows</a>
-          <a href="https://github.com/Alexis-Arduca/Project-Start-Up" target="_blank" data-lang-key="project1Code">Voir le code</a>
+      </div>
+    </div>
+    
+    <div class="modal" id="modal-zappy">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">×</span>
+        <div class="modal-body">
+          <div class="modal-details">
+            <!-- <div class="gif-frame">
+              <img src="../assets/projects/little_monsters/item_give.gif" alt="Item Give GIF" />
+              <img src="../assets/projects/little_monsters/monsters.gif" alt="Monsters GIF" />
+            </div> -->
+            <div class="project-description" data-lang-array="project1Description">
+              <p>Ce projet a été réalisé dans le cadre de ma deuxième année à Epitech, en C, C++ et Python3.</p>
+              <p>J'ai collaboré avec une équipe d'étudiant de ma promotion pour développer Zappy, un jeu en réseau où des équipes s'affrontent pour collecter des ressources sur un terrain.</p>
+              <p>L'objectif était de créer une expérience compétitive avec un serveur robuste en C, un client graphique en C++ avec Raylib, et des IA en Python3, visant à faire atteindre le niveau maximal à six joueurs.</p>
+              <p>En tant que développeur, j'ai co-développé l'IA des personnages avec un coéquipier, implémenté la gestion des erreurs et réalisé des tests unitaires en C et C++ pour assurer la robustesse du serveur et du client. Ce projet m'a permis de renforcer mes compétences en programmation réseau, tests unitaires et collaboration.</p>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-shell">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">×</span>
+        <div class="modal-header">
+          <h4>42sh</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-details">
+            <!-- <div class="gif-frame">
+              <img src="../assets/projects/little_monsters/item_give.gif" alt="Item Give GIF" />
+              <img src="../assets/projects/little_monsters/monsters.gif" alt="Monsters GIF" />
+            </div> -->
+            <div class="project-description" data-lang-array="project1Description">
+              <p>Ce projet a été réalisé dans le cadre de ma première année à Epitech, en langage C.</p>
+              <p>J'ai collaboré avec une équipe de cinq étudiants pour développer 42sh, un interpréteur de commandes (shell) pour systèmes UNIX.</p>
+              <p>L'objectif était de créer un shell robuste et fonctionnel, capable d'exécuter des commandes UNIX complexes, compilé via Makefile.</p>
+              <p>En tant que développeur, j'ai implémenté de nombreuses fonctionnalités et commandes du shell, ainsi que des tests unitaires pour garantir sa fiabilité. Ce projet m'a permis de renforcer mes compétences en programmation système, gestion des erreurs et travail en équipe.</p>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-tetris">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">×</span>
+        <div class="modal-header">
+          <h4>Tetris</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-details">
+            <!-- <div class="gif-frame">
+              <img src="../assets/projects/little_monsters/item_give.gif" alt="Item Give GIF" />
+              <img src="../assets/projects/little_monsters/monsters.gif" alt="Monsters GIF" />
+            </div> -->
+            <div class="project-description" data-lang-array="project1Description">
+              <p>Ce projet a été réalisé dans le cadre de ma deuxième année à Epitech, en langage C.</p>
+              <p>J'ai collaboré avec une équipe pour développer un jeu Tetris avec la bibliothèque ncurses pour une interface en terminal UNIX.</p>
+              <p>L'objectif était de recréer le gameplay classique de Tetris avec des contrôles fluides et une interface textuelle, compilé via Makefile.</p>
+              <p>En tant que développeur, j'ai implémenté les mécaniques de jeu, la gestion des pièces et les interactions utilisateur, ainsi que des tests unitaires pour assurer la stabilité. Ce projet m'a permis de renforcer mes compétences en programmation bas niveau et en interfaces textuelles.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-zeldarogue">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">×</span>
+        <div class="modal-header">
+          <h4>Zelda Rogue</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-details">
+            <!-- <div class="gif-frame">
+              <img src="../assets/projects/little_monsters/item_give.gif" alt="Item Give GIF" />
+              <img src="../assets/projects/little_monsters/monsters.gif" alt="Monsters GIF" />
+            </div> -->
+            <div class="project-description" data-lang-array="project1Description">
+              <p>Ce projet a été réalisé dans le cadre de ma quatrième année à Saxion University, en C++.</p>
+              <p>J'ai développé Zelda Rogue en solo dans un premier temps après le premier cours du module C++, avant d'apprendre que c'était le but du rendu. Ce jeu est inspiré de pokérogue, mais reprenant l'univers de Zelda.</p>
+              <p>L'objectif était de créer un jeu tour par tour avec des mécaniques de combat provenant des jeux Zelda, comme l'utilisation de nombreux items à effets variés avec un système de niveau, de loot et de difficulté progressive, le tout en utilisant la bibliothèque graphique SFML.</p>
+              <p>En tant que développeur, j'ai conçu les mécaniques de jeu principales et implémenté le système tour par tour, renforçant mes compétences en programmation C++ et design de gameplay.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal" id="modal-asm">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">×</span>
+        <div class="modal-header">
+          <h4>ASM MiniLibC</h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-details">
+            <!-- <div class="gif-frame">
+              <img src="../assets/projects/little_monsters/item_give.gif" alt="Item Give GIF" />
+              <img src="../assets/projects/little_monsters/monsters.gif" alt="Monsters GIF" />
+            </div> -->
+            <div class="project-description" data-lang-array="project1Description">
+              <p>Ce projet a été réalisé dans le cadre de ma deuxième année à Epitech, en assembleur (x86-64).</p>
+              <p>En solo, j'ai développé MiniLibC, une réimplémentation de certaines fonctions standard de la bibliothèque C (comme `strlen`, `memcpy`, ou encore `strcmp`) en langage assembleur.</p>
+              <p>L'objectif principal était de mieux comprendre le fonctionnement bas niveau des appels systèmes et la gestion mémoire, tout en respectant les conventions d'appel en assembleur.</p>
+              <p>J'ai également conçu une suite de tests unitaires en C pour valider rigoureusement le comportement de chaque fonction, en comparant mes implémentations à celles de la libc standard. Ce projet m'a permis d'approfondir mes connaissances sur l'architecture des ordinateurs, le langage assembleur et les interactions entre C et ASM.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
   <script src="../components/navbar/navbar.js" defer></script>
-  <script src="../js/main.js" defer></script>
+  <script src="../js/projects.js" defer></script>
 </body>
 </html>
