@@ -77,5 +77,10 @@
 
   <script src="components/navbar/navbar.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script>
+    if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
+      window.location.href = "/Portfolio";
+    }
+  </script>
 </body>
 </html>
