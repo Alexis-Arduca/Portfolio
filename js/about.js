@@ -1,6 +1,4 @@
-// about.js
 document.addEventListener('DOMContentLoaded', () => {
-  // Animation d'apparition progressive des sections
   const sections = document.querySelectorAll('.about-section');
 
   const observer = new IntersectionObserver((entries) => {

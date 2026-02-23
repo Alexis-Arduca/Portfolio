@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alexis - Portfolio Développeur Jeux Vidéo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWixZiV8g8V1Nk6sZe4H1gP4n2J2gMxe5Y/jY6W0QbG7v/s5f7z7L3oZ7v7w7v7w7v7w7v7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexis — Portfolio Développeur Jeux Vidéo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="components/navbar/navbar.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
   <header id="navbar-container">
@@ -15,72 +16,79 @@
   </header>
 
   <section id="landing" class="hero">
-    <div class="hero-background"></div>
     <div class="hero-content">
       <h1 class="hero-title fade-in">
-        <span data-lang-key="heroTitleName">Alexis</span>
-        <span data-lang-key="heroTitlePortfolio">Portfolio</span>
+        <span>Alexis</span>
+        <span>Portfolio</span>
       </h1>
-      <p class="hero-tagline fade-in" data-lang-key="heroTagline">Étudiant en développement passionné de jeux vidéo, avec une expérience variée en langages et technologies.</p>
+      <p class="hero-tagline fade-in">Étudiant en développement passionné de jeux vidéo, avec une expérience variée en langages et technologies.</p>
+
+      <div class="hero-cta fade-in">
+        <a href="pages/contact.html" class="btn primary">Me contacter</a>
+        <a href="assets/contacts/cv_fr.pdf" target="_blank" class="btn secondary">Voir mon CV</a>
+      </div>
 
       <div class="intro-cards fade-in">
         <div class="intro-card">
-          <h2 class="intro-title" data-lang-key="introWhoAmI">Qui suis-je</h2>
-          <p class="intro-description" data-lang-key="introWhoAmIDescription">
+          <h2 class="intro-title">Qui suis-je</h2>
+          <p class="intro-description">
             Je suis Alexis, étudiant en 5ème année à Epitech, passionné par le développement de jeux vidéo et les technologies innovantes. Découvrez mes compétences !
           </p>
-          <a href="pages/about.html" class="btn primary" aria-label="En savoir plus sur moi">En savoir plus</a>
+          <a href="pages/about.html" class="btn primary">En savoir plus</a>
         </div>
         <div class="intro-card">
-          <h2 class="intro-title" data-lang-key="introInternship">Recherche de stage</h2>
-          <p class="intro-description" data-lang-key="introInternshipDescription">
+          <h2 class="intro-title">Recherche de stage</h2>
+          <p class="intro-description">
             Actuellement à la recherche d'un stage à temps plein, de début Mars 2026 jusqu'à fin Août 2026 dans le domaine du développement de jeu vidéo de préférence !
           </p>
-          <a href="pages/contact.html" class="btn primary" aria-label="Me contacter pour un stage">Me contacter</a>
+          <a href="pages/contact.html" class="btn primary">Me contacter</a>
         </div>
       </div>
 
-      <p class="featured-main-title fade-in" data-lang-key="heroTagline">Projet en vedette :</p>
+      <p class="featured-main-title fade-in">Projet en vedette</p>
       <div class="featured-card fade-in">
         <div class="featured-container">
           <div class="featured-poster">
             <img src="assets/projects/little_monsters/Poster.jpg" alt="Little Monsters Project Poster" />
           </div>
           <div class="featured-content">
-            <h2 class="featured-title" data-lang-key="featuredTitle">Little Monsters</h2>
-            <p class="featured-description" data-lang-key="featuredDescription">
+            <h2 class="featured-title">Little Monsters</h2>
+            <p class="featured-description">
               Projet développé sur Unity par un groupe de 6 personnes durant mon année à Saxion University of Applied Sciences, aux Pays-Bas, dans le cadre du module Project Show-Off.
             </p>
-            <p class="featured-description" data-lang-key="featuredDescription">
+            <p class="featured-description">
               L'objectif était de concevoir un jeu 3D destiné aux enfants, valorisant les monstres qu'ils ont dessinés tout en respectant les contraintes du client.
             </p>
-            <a href="pages/projects.html" class="btn primary" aria-label="Découvrir le projet Little Monsters">Découvrir le projet</a>
+            <a href="pages/projects.html" class="btn primary">Découvrir le projet</a>
           </div>
         </div>
       </div>
+
       <div class="hero-stats fade-in">
         <div class="stat">
-          <span class="stat-number" data-lang-key="statExperience">4+</span>
-          <span class="stat-label" data-lang-key="statExperienceLabel">Années d'études</span>
+          <span class="stat-number">5</span>
+          <span class="stat-label">Années à Epitech</span>
         </div>
         <div class="stat">
-          <span class="stat-number" data-lang-key="statProjects">20+</span>
-          <span class="stat-label" data-lang-key="statProjectsLabel">Projets réalisés (solo et groupe)</span>
+          <span class="stat-number">3+</span>
+          <span class="stat-label">Jeux Unity livrés</span>
         </div>
         <div class="stat">
-          <span class="stat-number" data-lang-key="statSkills">Unity</span>
-          <span class="stat-label" data-lang-key="statSkillsLabel">Compétence principale</span>
+          <span class="stat-number">6+</span>
+          <span class="stat-label">Langages maîtrisés</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">2</span>
+          <span class="stat-label">Pays d'expérience</span>
         </div>
       </div>
     </div>
   </section>
 
+  <div id="footer-container"></div>
+
   <script src="components/navbar/navbar.js" defer></script>
+  <script src="components/footer/footer.js" defer></script>
   <script src="js/main.js" defer></script>
-  <script>
-    if (window.location.pathname === "/" || window.location.pathname === "/index.html") {
-      window.location.href = "/Portfolio";
-    }
-  </script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-// Determine the path to the navbar HTML based on the current URL
 const currentPath = window.location.pathname;
 let pathToNavbar = currentPath.includes('/pages/') ? '../components/navbar/navbar.html' : 'components/navbar/navbar.html';
 

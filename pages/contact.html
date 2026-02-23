@@ -4,10 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Alexis</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWixZiV8g8V1Nk6sZe4H1gP4n2J2gMxe5Y/jY6W0QbG7v/s5f7z7L3oZ7v7w7v7w7v7w7v7w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../components/navbar/navbar.css" />
   <link rel="stylesheet" href="../css/contact.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
 </head>
 <body>
   <header id="navbar-container">
@@ -18,7 +19,12 @@
     <section class="contact-section">
       <h2>Me contacter</h2>
       <div class="section-content">
-        <p>Vous souhaitez discuter d'une opportunité, d'un projet, ou simplement échanger ? Voici comment me joindre :</p>
+
+        <div class="contact-intro">
+          <p class="contact-intro-title">Tu as une opportunité, un projet ou simplement envie d'échanger ?</p>
+          <p>Je suis toujours ouvert aux discussions, que ce soit pour une opportunité de stage, une collaboration ou juste pour parler de jeux vidéo. N'hésite pas à me contacter via l'un des canaux ci-dessous.</p>
+        </div>
+
         <div class="contact-grid">
           <div class="contact-card">
             <i class="fas fa-envelope"></i>
@@ -31,22 +37,32 @@
             <p><a href="https://www.linkedin.com/in/alexis-arduca-2166a0235/" target="_blank">Alexis Arduca</a></p>
           </div>
         </div>
+
         <div class="contact-grid">
           <div class="contact-card">
             <i class="fas fa-file-pdf"></i>
             <h3>CV (FR)</h3>
-            <p><a href="../assets/contacts/cv_fr.pdf" target="_blank">Voir le CV français</a></p>
+            <p><a href="../assets/contacts/cv_fr.pdf" target="_blank">Télécharger le CV français</a></p>
           </div>
           <div class="contact-card">
             <i class="fas fa-file-pdf"></i>
             <h3>CV (EN)</h3>
-            <p><a href="../assets/contacts\cv_en.pdf" target="_blank">Voir le CV anglais</a></p>
+            <p><a href="../assets/contacts/cv_en.pdf" target="_blank">Télécharger le CV anglais</a></p>
           </div>
         </div>
+
+        <div class="contact-availability">
+          <div class="availability-dot"></div>
+          <span>Disponible pour un stage à temps plein · Mars – Août 2026</span>
+        </div>
+
       </div>
     </section>
   </main>
 
+  <div id="footer-container"></div>
+
   <script src="../components/navbar/navbar.js" defer></script>
+  <script src="../components/footer/footer.js" defer></script>
 </body>
 </html>
