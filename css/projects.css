@@ -476,17 +476,97 @@ h2::after {
   text-align: center;
 }
 
-.modal-wip-badge {
-  font-family: 'DM Sans', sans-serif;
+:root {
+  --jam:      #a87cc9;
+  --jam-dim:  rgba(168, 124, 201, 0.12);
+  --jam-border: rgba(168, 124, 201, 0.25);
+}
+
+.project-card--gamejam {
+  border-color: var(--jam-border);
+}
+
+.project-card--gamejam::before {
+  background: linear-gradient(90deg, transparent, var(--jam), transparent) !important;
+}
+
+.project-card--gamejam:hover {
+  border-color: rgba(168, 124, 201, 0.45) !important;
+  box-shadow: 0 12px 32px rgba(168, 124, 201, 0.12) !important;
+}
+
+.project-card-badge--gamejam {
+  color: var(--jam);
+  background: var(--jam-dim);
+  border: 1px solid var(--jam-border);
+  border-radius: 2rem;
+  padding: 0.2rem 0.65rem;
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold);
-  background: var(--gold-dim);
-  border: 1px solid rgba(201,168,76,0.25);
-  border-radius: 2rem;
-  padding: 0.2rem 0.65rem;
-  vertical-align: middle;
-  margin-left: 0.75rem;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.category-section[data-category="personal"] .project-card.compact::before {
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.category-section[data-category="unity"] .project-card.compact {
+  border-color: rgba(122, 171, 142, 0.18);
+}
+
+.category-section[data-category="unity"] .project-card.compact::before {
+  background: linear-gradient(90deg, transparent, var(--sage), transparent);
+}
+
+.category-section[data-category="unity"] .project-card.compact:hover {
+  border-color: rgba(122, 171, 142, 0.4) !important;
+  box-shadow: 0 12px 32px rgba(122, 171, 142, 0.1) !important;
+}
+
+:root {
+  --cpp:      #6a9ec9;
+  --cpp-dim:  rgba(106, 158, 201, 0.1);
+  --cpp-border: rgba(106, 158, 201, 0.2);
+}
+
+.category-section[data-category="cpp"] .project-card.compact {
+  border-color: var(--cpp-border);
+}
+
+.category-section[data-category="cpp"] .project-card.compact::before {
+  background: linear-gradient(90deg, transparent, var(--cpp), transparent);
+}
+
+.category-section[data-category="cpp"] .project-card.compact:hover {
+  border-color: rgba(106, 158, 201, 0.4) !important;
+  box-shadow: 0 12px 32px rgba(106, 158, 201, 0.1) !important;
+}
+
+.category-section[data-category="gamejam"] .category-title { color: var(--jam); opacity: 0.85; }
+.category-section[data-category="unity"] .category-title   { color: var(--sage); opacity: 0.85; }
+.category-section[data-category="cpp"] .category-title     { color: var(--cpp); opacity: 0.85; }
+.category-section[data-category="personal"] .category-title { color: var(--gold-light); opacity: 0.85; }
+
+.filter-btn[data-filter="gamejam"].active { background: var(--jam-dim); border-color: var(--jam); color: var(--jam); }
+.filter-btn[data-filter="unity"].active   { background: var(--sage-dim); border-color: var(--sage); color: var(--sage); }
+.filter-btn[data-filter="cpp"].active     { background: var(--cpp-dim); border-color: var(--cpp); color: var(--cpp); }
+
+.category-section[data-category="unity"] .tech-tag,
+#modal-maskarena .tech-tag {
+  color: var(--jam);
+  background: var(--jam-dim);
+  border-color: var(--jam-border);
+}
+
+#modal-maskarena .project-links a {
+  color: var(--jam);
+  border-color: var(--jam-border);
+}
+
+#modal-maskarena .project-links a:hover {
+  background: var(--jam-dim);
+  border-color: var(--jam);
 }

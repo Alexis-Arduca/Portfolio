@@ -21,6 +21,7 @@
     <div class="project-filters">
       <button class="filter-btn active" data-filter="all">Tous</button>
       <button class="filter-btn" data-filter="personal">Projets Perso</button>
+      <button class="filter-btn" data-filter="gamejam">Game Jam</button>
       <button class="filter-btn" data-filter="unity">Unity</button>
       <button class="filter-btn" data-filter="cpp">C/C++</button>
     </div>
@@ -92,6 +93,37 @@
       </div>
     </section>
 
+    <section class="category-section" data-category="gamejam">
+      <h3 class="category-title">Game Jams</h3>
+      <div class="projects-grid">
+        <div class="project-card compact project-card--gamejam" data-project-id="maskarena">
+          <div class="project-card-badge project-card-badge--gamejam">Global Game Jam 2026</div>
+          <h4>MaskArena</h4>
+          <p>Jeu de combat local 2-4 joueurs réalisé en 48h. Incarne une poupée équipée de 4 masques, chacun octroyant une compétence unique : saut, dash, attaque, contre... Gérer ses cooldowns, c'est survivre.</p>
+          <div class="project-card-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Local Multiplayer</span>
+            <span class="tag">48h</span>
+          </div>
+          <div class="project-card-links">
+            <a href="https://ky0h0.itch.io/maskarena" target="_blank" class="btn primary">Voir sur itch.io</a>
+            <a href="#" class="btn secondary-sm" data-modal-trigger="maskarena">Détails</a>
+          </div>
+        </div>
+
+        <div class="project-card compact project-card--gamejam project-card--wip">
+          <div class="project-card-badge project-card-badge--soon">+2 autres jams</div>
+          <h4>Epitech Jam & GGJ 2025</h4>
+          <p>Deux autres participations à des game jams (Epitech Jam interne et Global Game Jam), expériences formatives dans la création rapide de jeux.</p>
+          <div class="project-card-tags">
+            <span class="tag tag--muted">Unity</span>
+            <span class="tag tag--muted">48h</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="category-section" data-category="cpp">
       <h3 class="category-title">Projets C/C++</h3>
       <div class="projects-grid">
@@ -127,6 +159,36 @@
         </div>
       </div>
     </section>
+
+    <div class="modal" id="modal-maskarena">
+      <div class="modal-content">
+        <span class="modal-close" aria-label="Fermer">x</span>
+        <div class="modal-header">
+          <h4>MaskArena <span class="modal-wip-badge">GGJ 2026</span></h4>
+          <div class="modal-badge">Global Game Jam · 48h · Équipe de 6</div>
+        </div>
+        <div class="modal-body modal-body--solo">
+          <div class="modal-details">
+            <div class="project-description">
+              <p>MaskArena est un jeu de combat local réalisé en 48h lors de la <strong>Global Game Jam 2026</strong>, sur site à l'école Brassart Montpellier, autour du thème imposé <em>"Mask"</em>.</p>
+              <p>Le jeu propose un affrontement 2 à 4 joueurs (manettes recommandées) où chaque joueur incarne une poupée pouvant équiper jusqu'à 4 masques simultanément. Chaque masque confère une compétence active — saut, dash, attaque, contre, etc. Sans masque, le personnage ne peut que se déplacer.</p>
+              <p>La mécanique centrale repose sur la gestion des <strong>cooldowns</strong> : utiliser un masque le met en recharge. Recevoir un coup met également un masque en cooldown. Si tous vos masques sont en cooldown au moment d'encaisser un coup, c'est la mort. Un système simple sur le papier, mais qui crée une tension tactique constante.</p>
+              <p>En tant que <strong>Lead Développeur</strong>, j'ai coordonné les choix techniques et supervisé l'intégration des mécaniques de jeu dans Unity au sein d'une équipe de 6 personnes.</p>
+            </div>
+            <div class="modal-tech-stack">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Local Multiplayer</span>
+              <span class="tech-tag">48h</span>
+              <span class="tech-tag">Équipe de 6</span>
+            </div>
+            <div class="project-links">
+              <a href="https://ky0h0.itch.io/maskarena" target="_blank">🎮 Jouer sur itch.io</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="modal" id="modal-unitetools">
       <div class="modal-content">
