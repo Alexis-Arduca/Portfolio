@@ -21,45 +21,45 @@
         <span>Alexis</span>
         <span>Portfolio</span>
       </h1>
-      <p class="hero-tagline fade-in">Étudiant en développement passionné de jeux vidéo, avec une expérience variée en langages et technologies.</p>
+      <p class="hero-tagline fade-in" data-i18n="index.hero_tagline">Étudiant en développement passionné de jeux vidéo, avec une expérience variée en langages et technologies.</p>
 
       <div class="hero-cta fade-in">
-        <a href="pages/contact.html" class="btn primary">Me contacter</a>
-        <a href="assets/contacts/cv_alexis_arduca.pdf" target="_blank" class="btn secondary">Voir mon CV</a>
+        <a href="pages/contact.html" class="btn primary" data-i18n="index.cta_contact">Me contacter</a>
+        <a href="assets/contacts/cv_alexis_arduca.pdf" target="_blank" class="btn secondary" data-i18n="index.cta_cv">Voir mon CV</a>
       </div>
 
       <div class="intro-cards fade-in">
         <div class="intro-card">
-          <h2 class="intro-title">Qui suis-je</h2>
-          <p class="intro-description">
+          <h2 class="intro-title" data-i18n="index.card_who_title">Qui suis-je</h2>
+          <p class="intro-description" data-i18n="index.card_who_desc">
             Je suis Alexis, étudiant en 5ème année à Epitech, passionné par le développement de jeux vidéo et les technologies innovantes. Découvrez mes compétences !
           </p>
-          <a href="pages/about.html" class="btn primary">En savoir plus</a>
+          <a href="pages/about.html" class="btn primary" data-i18n="index.card_who_btn">En savoir plus</a>
         </div>
         <div class="intro-card">
-          <h2 class="intro-title">Recherche de stage</h2>
-          <p class="intro-description">
+          <h2 class="intro-title" data-i18n="index.card_internship_title">Recherche de stage</h2>
+          <p class="intro-description" data-i18n="index.card_internship_desc">
             Actuellement à la recherche d'un stage à temps plein, de début Mars 2026 jusqu'à fin Août 2026 dans le domaine du développement de jeu vidéo de préférence !
           </p>
-          <a href="pages/contact.html" class="btn primary">Me contacter</a>
+          <a href="pages/contact.html" class="btn primary" data-i18n="index.card_internship_btn">Me contacter</a>
         </div>
       </div>
 
-      <p class="featured-main-title fade-in">Projet en vedette</p>
+      <p class="featured-main-title fade-in" data-i18n="index.featured_title">Projet en vedette</p>
       <div class="featured-card fade-in">
         <div class="featured-container">
           <div class="featured-poster">
             <img src="assets/projects/little_monsters/Poster.jpg" alt="Little Monsters Project Poster" />
           </div>
           <div class="featured-content">
-            <h2 class="featured-title">Little Monsters</h2>
-            <p class="featured-description">
+            <h2 class="featured-title" data-i18n="index.featured_project_title">Little Monsters</h2>
+            <p class="featured-description" data-i18n="index.featured_project_desc1">
               Projet développé sur Unity par un groupe de 6 personnes durant mon année à Saxion University of Applied Sciences, aux Pays-Bas, dans le cadre du module Project Show-Off.
             </p>
-            <p class="featured-description">
+            <p class="featured-description" data-i18n="index.featured_project_desc2">
               L'objectif était de concevoir un jeu 3D destiné aux enfants, valorisant les monstres qu'ils ont dessinés tout en respectant les contraintes du client.
             </p>
-            <a href="pages/projects.html" class="btn primary">Découvrir le projet</a>
+            <a href="pages/projects.html" class="btn primary" data-i18n="index.featured_project_btn">Découvrir le projet</a>
           </div>
         </div>
       </div>
@@ -67,19 +67,19 @@
       <div class="hero-stats fade-in">
         <div class="stat">
           <span class="stat-number">5</span>
-          <span class="stat-label">Années à Epitech</span>
+          <span class="stat-label" data-i18n="index.stat_years">Années à Epitech</span>
         </div>
         <div class="stat">
           <span class="stat-number">3+</span>
-          <span class="stat-label">Jeux Unity livrés</span>
+          <span class="stat-label" data-i18n="index.stat_games">Jeux Unity livrés</span>
         </div>
         <div class="stat">
           <span class="stat-number">6+</span>
-          <span class="stat-label">Langages maîtrisés</span>
+          <span class="stat-label" data-i18n="index.stat_languages">Langages maîtrisés</span>
         </div>
         <div class="stat">
           <span class="stat-number">2</span>
-          <span class="stat-label">Pays d'expérience</span>
+          <span class="stat-label" data-i18n="index.stat_countries">Pays d'expérience</span>
         </div>
       </div>
     </div>
@@ -89,6 +89,10 @@
 
   <script src="components/navbar/navbar.js" defer></script>
   <script src="components/footer/footer.js" defer></script>
+  <script src="js/i18n.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => initI18n('index.title'));
+  </script>
 </body>
 </html>

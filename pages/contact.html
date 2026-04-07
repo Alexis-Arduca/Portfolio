@@ -17,23 +17,23 @@
 
   <main>
     <section class="contact-section">
-      <h2>Me contacter</h2>
+      <h2 data-i18n="contact.section_title">Me contacter</h2>
       <div class="section-content">
 
         <div class="contact-intro">
-          <p class="contact-intro-title">Tu as une opportunité, un projet ou simplement envie d'échanger ?</p>
-          <p>Je suis toujours ouvert aux discussions, que ce soit pour une opportunité de stage, une collaboration ou juste pour parler de jeux vidéo. N'hésite pas à me contacter via l'un des canaux ci-dessous.</p>
+          <p class="contact-intro-title" data-i18n="contact.intro_title">Tu as une opportunité, un projet ou simplement envie d'échanger ?</p>
+          <p data-i18n="contact.intro_text">Je suis toujours ouvert aux discussions, que ce soit pour une opportunité de stage, une collaboration ou juste pour parler de jeux vidéo. N'hésite pas à me contacter via l'un des canaux ci-dessous.</p>
         </div>
 
         <div class="contact-grid">
           <div class="contact-card">
             <i class="fas fa-envelope"></i>
-            <h3>Email</h3>
+            <h3 data-i18n="contact.email_title">Email</h3>
             <p><a href="mailto:alexis.arduca@epitech.eu">alexis.arduca@epitech.eu</a></p>
           </div>
           <div class="contact-card">
             <i class="fab fa-linkedin"></i>
-            <h3>LinkedIn</h3>
+            <h3 data-i18n="contact.linkedin_title">LinkedIn</h3>
             <p><a href="https://www.linkedin.com/in/alexis-arduca-2166a0235/" target="_blank">Alexis Arduca</a></p>
           </div>
         </div>
@@ -41,19 +41,14 @@
         <div class="contact-grid">
           <div class="contact-card">
             <i class="fas fa-file-pdf"></i>
-            <h3>CV (FR)</h3>
-            <p><a href="../assets/contacts/cv_alexis_arduca.pdf" target="_blank">Télécharger le CV français</a></p>
+            <h3 data-i18n="contact.cv_fr_title">CV (FR)</h3>
+            <p><a href="../assets/contacts/cv_alexis_arduca.pdf" target="_blank" data-i18n="contact.cv_fr_link">Télécharger le CV français</a></p>
           </div>
-          <!-- <div class="contact-card">
-            <i class="fas fa-file-pdf"></i>
-            <h3>CV (EN)</h3>
-            <p><a href="../assets/contacts/cv_en.pdf" target="_blank">Télécharger le CV anglais</a></p>
-          </div> -->
         </div>
 
         <div class="contact-availability">
           <div class="availability-dot"></div>
-          <span>Disponible pour un stage à temps plein · Mars – Août 2026</span>
+          <span data-i18n="contact.availability">Disponible pour un stage à temps plein · Mars – Août 2026</span>
         </div>
 
       </div>
@@ -64,5 +59,9 @@
 
   <script src="../components/navbar/navbar.js" defer></script>
   <script src="../components/footer/footer.js" defer></script>
+  <script src="../js/i18n.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => initI18n('contact.title'));
+  </script>
 </body>
 </html>

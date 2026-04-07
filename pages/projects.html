@@ -15,91 +15,91 @@
   </header>
 
   <main>
-    <h2>Mes Projets</h2>
-    <p class="section-intro">Découvrez mes réalisations en développement de jeux vidéo et programmation bas niveau, réalisées dans le cadre de mes études à Epitech et Saxion University, ainsi que mes projets personnels.</p>
+    <h2 data-i18n="projects.page_title">Mes Projets</h2>
+    <p class="section-intro" data-i18n="projects.intro">Découvrez mes réalisations en développement de jeux vidéo et programmation bas niveau, réalisées dans le cadre de mes études à Epitech et Saxion University, ainsi que mes projets personnels.</p>
 
     <div class="project-filters">
-      <button class="filter-btn active" data-filter="all">Tous</button>
-      <button class="filter-btn" data-filter="personal">Projets Perso</button>
-      <button class="filter-btn" data-filter="gamejam">Game Jam</button>
-      <button class="filter-btn" data-filter="unity">Unity</button>
-      <button class="filter-btn" data-filter="cpp">C/C++</button>
+      <button class="filter-btn active" data-filter="all" data-i18n="projects.filter_all">Tous</button>
+      <button class="filter-btn" data-filter="personal" data-i18n="projects.filter_personal">Projets Perso</button>
+      <button class="filter-btn" data-filter="gamejam" data-i18n="projects.filter_gamejam">Game Jam</button>
+      <button class="filter-btn" data-filter="unity" data-i18n="projects.filter_unity">Unity</button>
+      <button class="filter-btn" data-filter="cpp" data-i18n="projects.filter_cpp">C/C++</button>
     </div>
 
     <section class="category-section" data-category="personal">
-      <h3 class="category-title">Projets Personnels</h3>
+      <h3 class="category-title" data-i18n="projects.cat_personal">Projets Personnels</h3>
       <div class="projects-grid">
         <div class="project-card compact" data-project-id="unitetools">
-          <div class="project-card-badge">Actif</div>
-          <h4>Unite Tools</h4>
-          <p>Site web dédié à Pokémon Unite : simulateur de draft, créateur de tierlist, calculateur de dégâts et plus encore. Projet fan-made maintenu à jour.</p>
+          <div class="project-card-badge" data-i18n="projects.badge_active">Actif</div>
+          <h4 data-i18n="projects.unitetools.name">Unite Tools</h4>
+          <p data-i18n="projects.unitetools.short">Site web dédié à Pokémon Unite : simulateur de draft, créateur de tierlist, calculateur de dégâts et plus encore. Projet fan-made maintenu à jour.</p>
           <div class="project-card-tags">
             <span class="tag">HTML/CSS</span>
             <span class="tag">JavaScript</span>
             <span class="tag">GitHub Pages</span>
           </div>
           <div class="project-card-links">
-            <a href="https://fizzeydev.github.io/PokemonUniteDraft/" target="_blank" class="btn primary">Voir le site</a>
-            <a href="#" class="btn secondary-sm" data-modal-trigger="unitetools">Détails</a>
+            <a href="https://fizzeydev.github.io/PokemonUniteDraft/" target="_blank" class="btn primary" data-i18n="projects.btn_see_site">Voir le site</a>
+            <a href="#" class="btn secondary-sm" data-modal-trigger="unitetools" data-i18n="projects.btn_details">Détails</a>
           </div>
         </div>
         
         <div class="project-card compact" data-project-id="unity-coop">
-          <div class="project-card-badge">À venir · Steam</div>
-          <h4>Jeu Coop Unity</h4>
-          <p>Jeu multijoueur coopératif fun en équipe, actuellement en conception. Objectif : publication sur Steam.</p>
+          <div class="project-card-badge" data-i18n="projects.badge_coming_steam">À venir · Steam</div>
+          <h4 data-i18n="projects.unity_coop.name">Jeu Coop Unity</h4>
+          <p data-i18n="projects.unity_coop.short">Jeu multijoueur coopératif fun en équipe, actuellement en conception. Objectif : publication sur Steam.</p>
           <div class="project-card-tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
             <span class="tag">Multijoueur</span>
           </div>
           <div class="project-card-links">
-            <a href="#" class="btn secondary-sm" data-modal-trigger="unity-coop">Détails</a>
+            <a href="#" class="btn secondary-sm" data-modal-trigger="unity-coop" data-i18n="projects.btn_details">Détails</a>
           </div>
         </div>
 
         <div class="project-card compact project-card--wip">
-          <div class="project-card-badge project-card-badge--soon">Bientôt</div>
-          <h4>Projet en cours...</h4>
-          <p>D'autres projets personnels sont en cours de développement et seront ajoutés ici prochainement.</p>
+          <div class="project-card-badge project-card-badge--soon" data-i18n="projects.badge_soon">Bientôt</div>
+          <h4 data-i18n="projects.wip_card.title">Projet en cours...</h4>
+          <p data-i18n="projects.wip_card.desc">D'autres projets personnels sont en cours de développement et seront ajoutés ici prochainement.</p>
           <div class="project-card-tags">
-            <span class="tag tag--muted">À venir</span>
+            <span class="tag tag--muted" data-i18n="projects.badge_soon">À venir</span>
           </div>
         </div>
       </div>
     </section>
 
     <section class="category-section" data-category="unity">
-      <h3 class="category-title">Projets Unity</h3>
+      <h3 class="category-title" data-i18n="projects.cat_unity">Projets Unity</h3>
       <div class="projects-grid">
         <div class="project-card compact" data-project-id="little_monsters">
           <img src="../assets/projects/little_monsters/Poster.jpg" alt="Poster Little Monsters" />
-          <h4>Little Monsters</h4>
-          <p>Jeu Unity pour enfants avec IA et interactions dynamiques.</p>
-          <a href="#" class="btn primary" data-modal-trigger="little_monsters">En savoir plus</a>
+          <h4 data-i18n="projects.little_monsters.name">Little Monsters</h4>
+          <p data-i18n="projects.little_monsters.short">Jeu Unity pour enfants avec IA et interactions dynamiques.</p>
+          <a href="#" class="btn primary" data-modal-trigger="little_monsters" data-i18n="projects.btn_learn_more">En savoir plus</a>
         </div>
         <div class="project-card compact" data-project-id="shenanigans">
           <img src="../assets/projects/shenanigans/Poster.png" alt="Poster Shenanigans" />
-          <h4>Shenanigans</h4>
-          <p>Jeu multijoueur Unity avec dessin via caméra et gyroscope.</p>
-          <a href="#" class="btn primary" data-modal-trigger="shenanigans">En savoir plus</a>
+          <h4 data-i18n="projects.shenanigans.name">Shenanigans</h4>
+          <p data-i18n="projects.shenanigans.short">Jeu multijoueur Unity avec dessin via caméra et gyroscope.</p>
+          <a href="#" class="btn primary" data-modal-trigger="shenanigans" data-i18n="projects.btn_learn_more">En savoir plus</a>
         </div>
         <div class="project-card compact" data-project-id="chasing_echoes">
           <img src="../assets/projects/chasing_echoes/Poster.jpg" alt="Poster Chasing Echoes" />
-          <h4>Chasing Echoes</h4>
-          <p>Jeu Unity sensibilisant aux feux de forêt via mini-jeux.</p>
-          <a href="#" class="btn primary" data-modal-trigger="chasing_echoes">En savoir plus</a>
+          <h4 data-i18n="projects.chasing_echoes.name">Chasing Echoes</h4>
+          <p data-i18n="projects.chasing_echoes.short">Jeu Unity sensibilisant aux feux de forêt via mini-jeux.</p>
+          <a href="#" class="btn primary" data-modal-trigger="chasing_echoes" data-i18n="projects.btn_learn_more">En savoir plus</a>
         </div>
       </div>
     </section>
 
     <section class="category-section" data-category="gamejam">
-      <h3 class="category-title">Game Jams</h3>
+      <h3 class="category-title" data-i18n="projects.cat_gamejam">Game Jams</h3>
       <div class="projects-grid">
         <div class="project-card compact project-card--gamejam" data-project-id="maskarena">
-          <div class="project-card-badge project-card-badge--gamejam">Global Game Jam 2026</div>
-          <h4>MaskArena</h4>
-          <p>Jeu de combat local 2-4 joueurs réalisé en 48h. Incarne une poupée équipée de 4 masques, chacun octroyant une compétence unique : saut, dash, attaque, contre... Gérer ses cooldowns, c'est survivre.</p>
+          <div class="project-card-badge project-card-badge--gamejam" data-i18n="projects.badge_ggj2026">Global Game Jam 2026</div>
+          <h4 data-i18n="projects.maskarena.name">MaskArena</h4>
+          <p data-i18n="projects.maskarena.short">Jeu de combat local 2-4 joueurs réalisé en 48h. Incarne une poupée équipée de 4 masques, chacun octroyant une compétence unique : saut, dash, attaque, contre... Gérer ses cooldowns, c'est survivre.</p>
           <div class="project-card-tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
@@ -107,15 +107,15 @@
             <span class="tag">48h</span>
           </div>
           <div class="project-card-links">
-            <a href="https://ky0h0.itch.io/maskarena" target="_blank" class="btn primary">Voir sur itch.io</a>
-            <a href="#" class="btn secondary-sm" data-modal-trigger="maskarena">Détails</a>
+            <a href="https://ky0h0.itch.io/maskarena" target="_blank" class="btn primary" data-i18n="projects.btn_see_itchio">Voir sur itch.io</a>
+            <a href="#" class="btn secondary-sm" data-modal-trigger="maskarena" data-i18n="projects.btn_details">Détails</a>
           </div>
         </div>
 
         <div class="project-card compact project-card--gamejam project-card--wip">
-          <div class="project-card-badge project-card-badge--soon">+2 autres jams</div>
-          <h4>Epitech Jam & GGJ 2025</h4>
-          <p>Deux autres participations à des game jams (Epitech Jam interne et Global Game Jam), expériences formatives dans la création rapide de jeux.</p>
+          <div class="project-card-badge project-card-badge--soon" data-i18n="projects.badge_2plus">+2 autres jams</div>
+          <h4 data-i18n="projects.epitech_jam.name">Epitech Jam & GGJ 2025</h4>
+          <p data-i18n="projects.epitech_jam.desc">Deux autres participations à des game jams (Epitech Jam interne et Global Game Jam), expériences formatives dans la création rapide de jeux.</p>
           <div class="project-card-tags">
             <span class="tag tag--muted">Unity</span>
             <span class="tag tag--muted">48h</span>
@@ -125,55 +125,57 @@
     </section>
 
     <section class="category-section" data-category="cpp">
-      <h3 class="category-title">Projets C/C++</h3>
+      <h3 class="category-title" data-i18n="projects.cat_cpp">Projets C/C++</h3>
       <div class="projects-grid">
         <div class="project-card compact" data-project-id="arcade">
-          <h4>Arcade</h4>
-          <p>Jeu d'arcade en C++ avec bascule dynamique entre bibliothèques graphiques en cours de partie.</p>
-          <a href="#" class="btn primary" data-modal-trigger="arcade">En savoir plus</a>
+          <h4 data-i18n="projects.arcade.name">Arcade</h4>
+          <p data-i18n="projects.arcade.short">Jeu d'arcade en C++ avec bascule dynamique entre bibliothèques graphiques en cours de partie.</p>
+          <a href="#" class="btn primary" data-modal-trigger="arcade" data-i18n="projects.btn_learn_more">En savoir plus</a>
         </div>
         <div class="project-card compact" data-project-id="zappy">
-          <h4>Zappy</h4>
-          <p>Jeu en réseau en C (serveur), C++/Raylib (client) et Python3 (IA), axé sur la collecte de ressources.</p>
-          <a href="#" class="btn primary" data-modal-trigger="zappy">En savoir plus</a>
+          <h4 data-i18n="projects.zappy.name">Zappy</h4>
+          <p data-i18n="projects.zappy.short">Jeu en réseau en C (serveur), C++/Raylib (client) et Python3 (IA), axé sur la collecte de ressources.</p>
+          <a href="#" class="btn primary" data-modal-trigger="zappy" data-i18n="projects.btn_learn_more">En savoir plus</a>
         </div>
         <div class="project-card compact" data-project-id="shell">
-          <h4>42sh</h4>
-          <p>Reproduction de shell UNIX en C, interpréteur de commandes pour systèmes UNIX, compilé via Makefile.</p>
-          <a href="#" class="btn primary" data-modal-trigger="shell">En savoir plus</a>
+          <h4 data-i18n="projects.shell.name">42sh</h4>
+          <p data-i18n="projects.shell.short">Reproduction de shell UNIX en C, interpréteur de commandes pour systèmes UNIX, compilé via Makefile.</p>
+          <a href="#" class="btn primary" data-modal-trigger="shell" data-i18n="projects.btn_learn_more">En savoir plus</a>
         </div>
         <div class="project-card compact" data-project-id="tetris">
-          <h4>Tetris</h4>
-          <p>Jeu Tetris en C avec la bibliothèque ncurses pour une interface en terminal UNIX, compilé via Makefile.</p>
-          <a href="#" class="btn primary" data-modal-trigger="tetris">En savoir plus</a>
+          <h4 data-i18n="projects.tetris.name">Tetris</h4>
+          <p data-i18n="projects.tetris.short">Jeu Tetris en C avec la bibliothèque ncurses pour une interface en terminal UNIX, compilé via Makefile.</p>
+          <a href="#" class="btn primary" data-modal-trigger="tetris" data-i18n="projects.btn_learn_more">En savoir plus</a>
         </div>
         <div class="project-card compact" data-project-id="zeldarogue">
-          <h4>Zelda Rogue</h4>
-          <p>Zelda Rogue en C++, jeu tour par tour inspiré de Pokerogue dans l'univers de Zelda, avec la librairie graphique SFML.</p>
-          <a href="#" class="btn primary" data-modal-trigger="zeldarogue">En savoir plus</a>
+          <h4 data-i18n="projects.zeldarogue.name">Zelda Rogue</h4>
+          <p data-i18n="projects.zeldarogue.short">Zelda Rogue en C++, jeu tour par tour inspiré de Pokerogue dans l'univers de Zelda, avec la librairie graphique SFML.</p>
+          <a href="#" class="btn primary" data-modal-trigger="zeldarogue" data-i18n="projects.btn_learn_more">En savoir plus</a>
         </div>
         <div class="project-card compact" data-project-id="asm">
-          <h4>ASM MiniLibC</h4>
-          <p>MiniLibC en ASM, implémentation de fonctions C de base (strlen, strchr, strcasecmp) pour systèmes UNIX.</p>
-          <a href="#" class="btn primary" data-modal-trigger="asm">En savoir plus</a>
+          <h4 data-i18n="projects.asm.name">ASM MiniLibC</h4>
+          <p data-i18n="projects.asm.short">MiniLibC en ASM, implémentation de fonctions C de base (strlen, strchr, strcasecmp) pour systèmes UNIX.</p>
+          <a href="#" class="btn primary" data-modal-trigger="asm" data-i18n="projects.btn_learn_more">En savoir plus</a>
         </div>
       </div>
     </section>
 
+    <!-- ── MODALS ─────────────────────────────────────────────────────────── -->
+
     <div class="modal" id="modal-maskarena">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
         <div class="modal-header">
-          <h4>MaskArena <span class="modal-wip-badge">GGJ 2026</span></h4>
-          <div class="modal-badge">Global Game Jam · 48h · Équipe de 6</div>
+          <h4>MaskArena <span class="modal-wip-badge" data-i18n="projects.maskarena.wip_badge">GGJ 2026</span></h4>
+          <div class="modal-badge" data-i18n="projects.maskarena.badge">Global Game Jam · 48h · Équipe de 6</div>
         </div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p>MaskArena est un jeu de combat local réalisé en 48h lors de la <strong>Global Game Jam 2026</strong>, sur site à l'école Brassart Montpellier, autour du thème imposé <em>"Mask"</em>.</p>
-              <p>Le jeu propose un affrontement 2 à 4 joueurs (manettes recommandées) où chaque joueur incarne une poupée pouvant équiper jusqu'à 4 masques simultanément. Chaque masque confère une compétence active — saut, dash, attaque, contre, etc. Sans masque, le personnage ne peut que se déplacer.</p>
-              <p>La mécanique centrale repose sur la gestion des <strong>cooldowns</strong> : utiliser un masque le met en recharge. Recevoir un coup met également un masque en cooldown. Si tous vos masques sont en cooldown au moment d'encaisser un coup, c'est la mort. Un système simple sur le papier, mais qui crée une tension tactique constante.</p>
-              <p>En tant que <strong>Lead Développeur</strong>, j'ai coordonné les choix techniques et supervisé l'intégration des mécaniques de jeu dans Unity au sein d'une équipe de 6 personnes.</p>
+              <p data-i18n="projects.maskarena.desc1">MaskArena est un jeu de combat local réalisé en 48h lors de la <strong>Global Game Jam 2026</strong>…</p>
+              <p data-i18n="projects.maskarena.desc2">Le jeu propose un affrontement 2 à 4 joueurs…</p>
+              <p data-i18n="projects.maskarena.desc3">La mécanique centrale repose sur la gestion des <strong>cooldowns</strong>…</p>
+              <p data-i18n="projects.maskarena.desc4">En tant que <strong>Lead Développeur</strong>…</p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">Unity</span>
@@ -183,7 +185,7 @@
               <span class="tech-tag">Équipe de 6</span>
             </div>
             <div class="project-links">
-              <a href="https://ky0h0.itch.io/maskarena" target="_blank">🎮 Jouer sur itch.io</a>
+              <a href="https://ky0h0.itch.io/maskarena" target="_blank" data-i18n="projects.maskarena.play_link">🎮 Jouer sur itch.io</a>
             </div>
           </div>
         </div>
@@ -192,18 +194,18 @@
 
     <div class="modal" id="modal-unitetools">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
         <div class="modal-header">
-          <h4>Unite Tools</h4>
-          <div class="modal-badge">Projet Personnel · Actif</div>
+          <h4 data-i18n="projects.unitetools.name">Unite Tools</h4>
+          <div class="modal-badge" data-i18n="projects.unitetools.badge">Projet Personnel · Actif</div>
         </div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p>Unite Tools est un site web fan-made entièrement dédié à <strong>Pokémon Unite</strong>, développé et maintenu par mes soins en dehors de mes études.</p>
-              <p>Le site propose plusieurs outils pratiques pour les joueurs : un simulateur de draft pour préparer les parties compétitives, un créateur de tierlist personnalisable, un calculateur de dégâts, et d'autres fonctionnalités en cours de développement (carte dynamique, timings de map).</p>
-              <p>Ce projet illustre ma capacité à concevoir et maintenir seul un produit web de A à Z - de la conception à la mise en production sur GitHub Pages - tout en restant à jour avec les patches et ajouts de contenu du jeu.</p>
-              <p>Disponible en 5 langues : Français, Anglais, Allemand, Espagnol, Italien.</p>
+              <p data-i18n="projects.unitetools.desc1"></p>
+              <p data-i18n="projects.unitetools.desc2"></p>
+              <p data-i18n="projects.unitetools.desc3"></p>
+              <p data-i18n="projects.unitetools.desc4"></p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">HTML</span>
@@ -213,26 +215,27 @@
               <span class="tech-tag">i18n</span>
             </div>
             <div class="project-links">
-              <a href="https://fizzeydev.github.io/PokemonUniteDraft/" target="_blank">Voir le site</a>
-              <a href="https://github.com/FizzeyDev/PokemonUniteDraft" target="_blank">Voir le code</a>
+              <a href="https://fizzeydev.github.io/PokemonUniteDraft/" target="_blank" data-i18n="projects.btn_see_site">Voir le site</a>
+              <a href="https://github.com/FizzeyDev/PokemonUniteDraft" target="_blank">GitHub</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="modal" id="modal-unity-coop">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
         <div class="modal-header">
-          <h4>Projet Unity Coop <span class="modal-wip-badge">En développement</span></h4>
-          <div class="modal-badge">Projet Personnel · À venir sur Steam</div>
+          <h4 data-i18n="projects.unity_coop.name">Projet Unity Coop <span class="modal-wip-badge" data-i18n="projects.unity_coop.wip_badge">En développement</span></h4>
+          <div class="modal-badge" data-i18n="projects.unity_coop.badge">Projet Personnel · À venir sur Steam</div>
         </div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p>Jeu multijoueur coopératif en équipe développé sur Unity, actuellement en phase de conception. L'objectif est de créer une expérience fun et accessible, pensée pour être jouée entre amis.</p>
-              <p>Ce projet est avant tout une aventure personnelle de long terme - concevoir, développer et publier un jeu complet sur Steam de manière indépendante, en gérant seul l'ensemble du cycle de développement.</p>
-              <p>Plus de détails à venir au fur et à mesure de l'avancement du projet.</p>
+              <p data-i18n="projects.unity_coop.desc1"></p>
+              <p data-i18n="projects.unity_coop.desc2"></p>
+              <p data-i18n="projects.unity_coop.desc3"></p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">Unity</span>
@@ -240,7 +243,7 @@
               <span class="tech-tag">Multijoueur</span>
               <span class="tech-tag">Steam</span>
             </div>
-            <p class="repo-private-note">🚧 Projet en cours de conception - Steam page à venir</p>
+            <p class="repo-private-note" data-i18n="projects.wip_steam">🚧 Projet en cours de conception - Steam page à venir</p>
           </div>
         </div>
       </div>
@@ -248,9 +251,9 @@
     
     <div class="modal" id="modal-little_monsters">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
         <div class="modal-header">
-          <h4>Little Monsters</h4>
+          <h4 data-i18n="projects.little_monsters.name">Little Monsters</h4>
         </div>
         <div class="modal-body">
           <div class="modal-media">
@@ -263,14 +266,14 @@
               <img src="../assets/projects/little_monsters/monsters.gif" alt="Monsters GIF" />
             </div>
             <div class="project-description">
-              <p>Ce jeu a été réalisé avec le moteur Unity dans le cadre d'un projet de groupe à Saxion University of Applied Sciences, aux Pays-Bas.</p>
-              <p>J'ai travaillé aux côtés de game designers et artistes 2D/3D pour créer un jeu destiné à un jeune public, en m'appuyant sur des créatures imaginées par des enfants dans une école partenaire.</p>
-              <p>L'objectif était de concevoir un jeu amusant et accessible, fidèle à l'univers inventé par les enfants, tout en proposant une expérience ludique et cohérente.</p>
-              <p>En tant que développeur Unity, j'ai assuré la programmation du gameplay, l'intégration des animations des monstres 3D ainsi que leur IA, la mise en place des interactions avec le monde et l'apparition aléatoire des monstres dans leurs biomes respectifs.</p>
+              <p data-i18n="projects.little_monsters.desc1"></p>
+              <p data-i18n="projects.little_monsters.desc2"></p>
+              <p data-i18n="projects.little_monsters.desc3"></p>
+              <p data-i18n="projects.little_monsters.desc4"></p>
             </div>
             <div class="project-links">
-              <a href="https://mega.nz/file/tNBxHJTZ#_a3Efl-kOxeu3JKpo1m79A7cNCCtZ4Ji0Y-xAHPMxjo" download>Build Windows</a>
-              <a href="https://github.com/Alexis-Arduca/MonsterProject" target="_blank">Voir le code</a>
+              <a href="https://mega.nz/file/tNBxHJTZ#_a3Efl-kOxeu3JKpo1m79A7cNCCtZ4Ji0Y-xAHPMxjo" download data-i18n="projects.little_monsters.build_windows">Build Windows</a>
+              <a href="https://github.com/Alexis-Arduca/MonsterProject" target="_blank" data-i18n="projects.little_monsters.see_code">Voir le code</a>
             </div>
           </div>
         </div>
@@ -279,9 +282,9 @@
 
     <div class="modal" id="modal-shenanigans">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
         <div class="modal-header">
-          <h4>Shenanigans</h4>
+          <h4 data-i18n="projects.shenanigans.name">Shenanigans</h4>
         </div>
         <div class="modal-body">
           <div class="modal-media">
@@ -294,15 +297,15 @@
               <img src="../assets/projects/shenanigans/game.gif" alt="Game GIF" />
             </div>
             <div class="project-description">
-              <p>Ce jeu a été réalisé avec le moteur Unity dans le cadre d'un projet de groupe à Saxion University of Applied Sciences, aux Pays-Bas.</p>
-              <p>J'ai collaboré avec des game designers et des artistes pour développer un jeu multijoueur (3 joueurs) utilisant les fonctionnalités du gyroscope des appareils mobiles, avec un PC comme hôte.</p>
-              <p>L'objectif était de créer une expérience amusante et créative où chaque joueur, muni de son téléphone, reçoit un thème et une partie du corps à dessiner pendant un temps limité. Le PC héberge la partie et affiche le rendu final en combinant les dessins pour former une créature unique.</p>
-              <p>En tant que développeur Unity, j'ai implémenté la mécanique de dessin via le téléphone, la synchronisation multijoueur entre les appareils mobiles et le PC, ainsi que l'assemblage des dessins en temps réel sur l'hôte.</p>
+              <p data-i18n="projects.shenanigans.desc1"></p>
+              <p data-i18n="projects.shenanigans.desc2"></p>
+              <p data-i18n="projects.shenanigans.desc3"></p>
+              <p data-i18n="projects.shenanigans.desc4"></p>
             </div>
             <div class="project-links">
-              <a href="https://mega.nz/file/AYoHQKBa#zL8khlhSUmtNPt_YVQxY-xyde-9HLObSseonTUIirow" download>Build Windows</a>
-              <a href="https://mega.nz/file/QYhHCJaY#OZ3ZEqEfiadnK_NSL11ODzogTJnRiVCfqyzDQLAQ8tQ" download>Build Android</a>
-              <a href="https://github.com/Alexis-Arduca/Shenanigans" target="_blank">Voir le code</a>
+              <a href="https://mega.nz/file/AYoHQKBa#zL8khlhSUmtNPt_YVQxY-xyde-9HLObSseonTUIirow" download data-i18n="projects.shenanigans.build_windows">Build Windows</a>
+              <a href="https://mega.nz/file/QYhHCJaY#OZ3ZEqEfiadnK_NSL11ODzogTJnRiVCfqyzDQLAQ8tQ" download data-i18n="projects.shenanigans.build_android">Build Android</a>
+              <a href="https://github.com/Alexis-Arduca/Shenanigans" target="_blank" data-i18n="projects.shenanigans.see_code">Voir le code</a>
             </div>
           </div>
         </div>
@@ -311,9 +314,9 @@
 
     <div class="modal" id="modal-chasing_echoes">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
         <div class="modal-header">
-          <h4>Chasing Echoes</h4>
+          <h4 data-i18n="projects.chasing_echoes.name">Chasing Echoes</h4>
         </div>
         <div class="modal-body">
           <div class="modal-media">
@@ -326,14 +329,14 @@
               <img src="../assets/projects/chasing_echoes/path_game.gif" alt="Path Game GIF" />
             </div>
             <div class="project-description">
-              <p>Ce jeu a été réalisé avec le moteur Unity dans le cadre d'un projet de groupe à Saxion University of Applied Sciences, aux Pays-Bas.</p>
-              <p>Le but de notre projet était de sensibiliser à la prévention des feux de forêt à travers une expérience interactive engageante.</p>
-              <p>Le joueur incarne un employé d'une tour de guet forestière, chargé de surveiller les environs en période de crise. Des appels de détresse proviennent de personnes perdues dans la forêt, menacées par un incendie en progression.</p>
-              <p>En tant que développeur Unity, j'ai participé à l'intégration des mini-jeux, à la logique de réception et de traitement des appels, ainsi qu'à la gestion de la progression de l'incendie dans la carte.</p>
+              <p data-i18n="projects.chasing_echoes.desc1"></p>
+              <p data-i18n="projects.chasing_echoes.desc2"></p>
+              <p data-i18n="projects.chasing_echoes.desc3"></p>
+              <p data-i18n="projects.chasing_echoes.desc4"></p>
             </div>
             <div class="project-links">
-              <a href="https://mega.nz/file/FBxlSQ7I#Kn7697fwo9rU5vl-lOkMgHGGi_ZnakL9k4C7NRB35EA" download>Build Windows</a>
-              <a href="https://github.com/Alexis-Arduca/Project-Start-Up" target="_blank">Voir le code</a>
+              <a href="https://mega.nz/file/FBxlSQ7I#Kn7697fwo9rU5vl-lOkMgHGGi_ZnakL9k4C7NRB35EA" download data-i18n="projects.chasing_echoes.build_windows">Build Windows</a>
+              <a href="https://github.com/Alexis-Arduca/Project-Start-Up" target="_blank" data-i18n="projects.chasing_echoes.see_code">Voir le code</a>
             </div>
           </div>
         </div>
@@ -342,15 +345,15 @@
 
     <div class="modal" id="modal-arcade">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
-        <div class="modal-header"><h4>Arcade</h4></div>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
+        <div class="modal-header"><h4 data-i18n="projects.arcade.name">Arcade</h4></div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p>Ce projet a été réalisé en C++ dans le cadre de ma deuxième année à Epitech.</p>
-              <p>J'ai collaboré avec une équipe d'étudiants de ma promotion pour développer un jeu d'arcade fonctionnant avec des bibliothèques graphiques interchangeables.</p>
-              <p>L'objectif était de créer une expérience fluide permettant de basculer dynamiquement entre différentes bibliothèques graphiques (SFML, Stdlib, ncurses) en cours de partie, tout en maintenant une jouabilité stable.</p>
-              <p>En tant que développeur C++, j'ai implémenté la logique de gestion des bibliothèques graphiques, les transitions dynamiques, et la sauvegarde de records propre au jeu.</p>
+              <p data-i18n="projects.arcade.desc1"></p>
+              <p data-i18n="projects.arcade.desc2"></p>
+              <p data-i18n="projects.arcade.desc3"></p>
+              <p data-i18n="projects.arcade.desc4"></p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">C++</span>
@@ -358,7 +361,7 @@
               <span class="tech-tag">ncurses</span>
               <span class="tech-tag">Makefile</span>
             </div>
-            <p class="repo-private-note">⚠ Dépôt privé - disponible sur demande</p>
+            <p class="repo-private-note" data-i18n="projects.repo_private">⚠ Dépôt privé - disponible sur demande</p>
           </div>
         </div>
       </div>
@@ -366,24 +369,24 @@
 
     <div class="modal" id="modal-zappy">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
-        <div class="modal-header"><h4>Zappy</h4></div>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
+        <div class="modal-header"><h4 data-i18n="projects.zappy.name">Zappy</h4></div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p>Ce projet a été réalisé dans le cadre de ma deuxième année à Epitech, en C, C++ et Python3.</p>
-              <p>J'ai collaboré avec une équipe d'étudiants pour développer Zappy, un jeu en réseau où des équipes s'affrontent pour collecter des ressources sur un terrain.</p>
-              <p>L'objectif était de créer une expérience compétitive avec un serveur robuste en C, un client graphique en C++ avec Raylib, et des IA en Python3, visant à faire atteindre le niveau maximal à six joueurs.</p>
-              <p>En tant que développeur, j'ai co-développé l'IA des personnages, implémenté la gestion des erreurs et réalisé des tests unitaires en C et C++.</p>
+              <p data-i18n="projects.zappy.desc1"></p>
+              <p data-i18n="projects.zappy.desc2"></p>
+              <p data-i18n="projects.zappy.desc3"></p>
+              <p data-i18n="projects.zappy.desc4"></p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">C</span>
               <span class="tech-tag">C++</span>
               <span class="tech-tag">Python3</span>
               <span class="tech-tag">Raylib</span>
-              <span class="tech-tag">Réseau</span>
+              <span class="tech-tag" data-i18n="projects.zappy.network_tag">Réseau</span>
             </div>
-            <p class="repo-private-note">⚠ Dépôt privé - disponible sur demande</p>
+            <p class="repo-private-note" data-i18n="projects.repo_private">⚠ Dépôt privé - disponible sur demande</p>
           </div>
         </div>
       </div>
@@ -391,22 +394,22 @@
 
     <div class="modal" id="modal-shell">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
-        <div class="modal-header"><h4>42sh</h4></div>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
+        <div class="modal-header"><h4 data-i18n="projects.shell.name">42sh</h4></div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p>Ce projet a été réalisé dans le cadre de ma première année à Epitech, en langage C.</p>
-              <p>J'ai collaboré avec une équipe de cinq étudiants pour développer 42sh, un interpréteur de commandes (shell) pour systèmes UNIX.</p>
-              <p>L'objectif était de créer un shell robuste et fonctionnel, capable d'exécuter des commandes UNIX complexes, compilé via Makefile.</p>
-              <p>En tant que développeur, j'ai implémenté de nombreuses fonctionnalités et commandes du shell, ainsi que des tests unitaires pour garantir sa fiabilité.</p>
+              <p data-i18n="projects.shell.desc1"></p>
+              <p data-i18n="projects.shell.desc2"></p>
+              <p data-i18n="projects.shell.desc3"></p>
+              <p data-i18n="projects.shell.desc4"></p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">C</span>
               <span class="tech-tag">UNIX</span>
               <span class="tech-tag">Makefile</span>
             </div>
-            <p class="repo-private-note">⚠ Dépôt privé - disponible sur demande</p>
+            <p class="repo-private-note" data-i18n="projects.repo_private">⚠ Dépôt privé - disponible sur demande</p>
           </div>
         </div>
       </div>
@@ -414,15 +417,15 @@
 
     <div class="modal" id="modal-tetris">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
-        <div class="modal-header"><h4>Tetris</h4></div>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
+        <div class="modal-header"><h4 data-i18n="projects.tetris.name">Tetris</h4></div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p>Ce projet a été réalisé dans le cadre de ma deuxième année à Epitech, en langage C.</p>
-              <p>J'ai collaboré avec une équipe pour développer un jeu Tetris avec la bibliothèque ncurses pour une interface en terminal UNIX.</p>
-              <p>L'objectif était de recréer le gameplay classique de Tetris avec des contrôles fluides et une interface textuelle, compilé via Makefile.</p>
-              <p>En tant que développeur, j'ai implémenté les mécaniques de jeu, la gestion des pièces et les interactions utilisateur.</p>
+              <p data-i18n="projects.tetris.desc1"></p>
+              <p data-i18n="projects.tetris.desc2"></p>
+              <p data-i18n="projects.tetris.desc3"></p>
+              <p data-i18n="projects.tetris.desc4"></p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">C</span>
@@ -430,7 +433,7 @@
               <span class="tech-tag">UNIX</span>
               <span class="tech-tag">Makefile</span>
             </div>
-            <p class="repo-private-note">⚠ Dépôt privé - disponible sur demande</p>
+            <p class="repo-private-note" data-i18n="projects.repo_private">⚠ Dépôt privé - disponible sur demande</p>
           </div>
         </div>
       </div>
@@ -438,22 +441,22 @@
 
     <div class="modal" id="modal-zeldarogue">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
-        <div class="modal-header"><h4>Zelda Rogue</h4></div>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
+        <div class="modal-header"><h4 data-i18n="projects.zeldarogue.name">Zelda Rogue</h4></div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p>Ce projet a été réalisé dans le cadre de ma quatrième année à Saxion University, en C++.</p>
-              <p>J'ai développé Zelda Rogue en solo: un jeu tour par tour inspiré de Pokérogue, mais reprenant l'univers de Zelda avec ses items et mécaniques iconiques.</p>
-              <p>Le jeu propose un système de niveau, de loot et de difficulté progressive, avec des combats utilisant des items à effets variés, le tout via la bibliothèque graphique SFML.</p>
-              <p>En tant que développeur solo, j'ai conçu et implémenté l'intégralité des mécaniques de jeu, du système tour par tour et de l'interface graphique.</p>
+              <p data-i18n="projects.zeldarogue.desc1"></p>
+              <p data-i18n="projects.zeldarogue.desc2"></p>
+              <p data-i18n="projects.zeldarogue.desc3"></p>
+              <p data-i18n="projects.zeldarogue.desc4"></p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">C++</span>
               <span class="tech-tag">SFML</span>
               <span class="tech-tag">Solo</span>
             </div>
-            <p class="repo-private-note">⚠ Dépôt privé - disponible sur demande</p>
+            <p class="repo-private-note" data-i18n="projects.repo_private">⚠ Dépôt privé - disponible sur demande</p>
           </div>
         </div>
       </div>
@@ -461,15 +464,15 @@
 
     <div class="modal" id="modal-asm">
       <div class="modal-content">
-        <span class="modal-close" aria-label="Fermer">x</span>
-        <div class="modal-header"><h4>ASM MiniLibC</h4></div>
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
+        <div class="modal-header"><h4 data-i18n="projects.asm.name">ASM MiniLibC</h4></div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p>Ce projet a été réalisé dans le cadre de ma deuxième année à Epitech, en assembleur (x86-64).</p>
-              <p>En solo, j'ai développé MiniLibC, une réimplémentation de certaines fonctions standard de la bibliothèque C (strlen, memcpy, strcmp...) en langage assembleur.</p>
-              <p>L'objectif était de mieux comprendre le fonctionnement bas niveau des appels systèmes et la gestion mémoire, tout en respectant les conventions d'appel en assembleur.</p>
-              <p>J'ai également conçu une suite de tests unitaires en C pour valider rigoureusement le comportement de chaque fonction, en comparant mes implémentations à celles de la libc standard.</p>
+              <p data-i18n="projects.asm.desc1"></p>
+              <p data-i18n="projects.asm.desc2"></p>
+              <p data-i18n="projects.asm.desc3"></p>
+              <p data-i18n="projects.asm.desc4"></p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">ASM x86-64</span>
@@ -477,7 +480,7 @@
               <span class="tech-tag">UNIX</span>
               <span class="tech-tag">Solo</span>
             </div>
-            <p class="repo-private-note">⚠ Dépôt privé - disponible sur demande</p>
+            <p class="repo-private-note" data-i18n="projects.repo_private">⚠ Dépôt privé - disponible sur demande</p>
           </div>
         </div>
       </div>
@@ -488,6 +491,10 @@
 
   <script src="../components/navbar/navbar.js" defer></script>
   <script src="../components/footer/footer.js" defer></script>
+  <script src="../js/i18n.js" defer></script>
   <script src="../js/projects.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => initI18n('projects.title'));
+  </script>
 </body>
 </html>
