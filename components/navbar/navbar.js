@@ -1,5 +1,6 @@
+const repoName = '/Portfolio';
 const currentPath = window.location.pathname;
-let pathToNavbar = currentPath.includes('/pages/') ? '../components/navbar/navbar.html' : 'components/navbar/navbar.html';
+let pathToNavbar = `${repoName}/components/navbar/navbar.html`;
 
 fetch(pathToNavbar)
   .then(res => res.text())
