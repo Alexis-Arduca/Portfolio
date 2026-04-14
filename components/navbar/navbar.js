@@ -1,4 +1,5 @@
-const repoName = '/Portfolio';
+const isGitHubPages = window.location.hostname.includes('github.io');
+const repoName = isGitHubPages ? '/Portfolio' : '';
 const currentPath = window.location.pathname;
 let pathToNavbar = `${repoName}/components/navbar/navbar.html`;
 
