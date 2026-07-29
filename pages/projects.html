@@ -4,6 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mes Projets - Alexis</title>
+  <meta name="description" content="Projets Unity, C/C++ et outils personnels réalisés par Alexis Arduca dans le cadre d'Epitech, Saxion University et de game jams.">
+  <link rel="canonical" href="https://fizzeydev.github.io/Portfolio/pages/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mes Projets - Alexis Arduca">
+  <meta property="og:description" content="Projets Unity, C/C++ et outils personnels réalisés par Alexis Arduca dans le cadre d'Epitech, Saxion University et de game jams.">
+  <meta property="og:image" content="https://fizzeydev.github.io/Portfolio/assets/projects/little_monsters/Poster.jpg">
+  <meta property="og:url" content="https://fizzeydev.github.io/Portfolio/pages/projects.html">
+  <meta name="twitter:card" content="summary_large_image">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../components/navbar/navbar.css" />
   <link rel="stylesheet" href="../css/projects.css" />
@@ -19,11 +27,11 @@
     <p class="section-intro" data-i18n="projects.intro">Découvrez mes réalisations en développement de jeux vidéo et programmation bas niveau, réalisées dans le cadre de mes études à Epitech et Saxion University, ainsi que mes projets personnels.</p>
 
     <div class="project-filters">
-      <button class="filter-btn active" data-filter="all" data-i18n="projects.filter_all">Tous</button>
-      <button class="filter-btn" data-filter="personal" data-i18n="projects.filter_personal">Projets Perso</button>
-      <button class="filter-btn" data-filter="gamejam" data-i18n="projects.filter_gamejam">Game Jam</button>
-      <button class="filter-btn" data-filter="unity" data-i18n="projects.filter_unity">Unity</button>
-      <button class="filter-btn" data-filter="cpp" data-i18n="projects.filter_cpp">C/C++</button>
+      <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="projects.filter_all">Tous</button>
+      <button class="filter-btn" data-filter="personal" aria-pressed="false" data-i18n="projects.filter_personal">Projets Perso</button>
+      <button class="filter-btn" data-filter="gamejam" aria-pressed="false" data-i18n="projects.filter_gamejam">Game Jam</button>
+      <button class="filter-btn" data-filter="unity" aria-pressed="false" data-i18n="projects.filter_unity">Unity</button>
+      <button class="filter-btn" data-filter="cpp" aria-pressed="false" data-i18n="projects.filter_cpp">C/C++</button>
     </div>
 
     <section class="category-section" data-category="personal">
@@ -39,22 +47,36 @@
             <span class="tag">GitHub Pages</span>
           </div>
           <div class="project-card-links">
-            <a href="https://fizzeydev.github.io/PokemonUniteDraft/" target="_blank" class="btn primary" data-i18n="projects.btn_see_site">Voir le site</a>
+            <a href="https://fizzeydev.github.io/PokemonUniteDraft/" target="_blank" rel="noopener noreferrer" class="btn primary" data-i18n="projects.btn_see_site">Voir le site</a>
             <a href="#" class="btn secondary-sm" data-modal-trigger="unitetools" data-i18n="projects.btn_details">Détails</a>
           </div>
         </div>
         
-        <div class="project-card compact" data-project-id="unity-coop">
-          <div class="project-card-badge" data-i18n="projects.badge_coming_steam">À venir · Steam</div>
-          <h4 data-i18n="projects.unity_coop.name">Jeu Coop Unity</h4>
-          <p data-i18n="projects.unity_coop.short">Jeu multijoueur coopératif fun en équipe, actuellement en conception. Objectif : publication sur Steam.</p>
+        <div class="project-card compact" data-project-id="pokemon-framework">
+          <div class="project-card-badge" data-i18n="projects.badge_active">Actif</div>
+          <h4 data-i18n="projects.pokemon_framework.name">Pokémon Unity Framework</h4>
+          <p data-i18n="projects.pokemon_framework.short">Framework Unity open-source pour aider d'autres développeurs à créer leurs propres jeux inspirés de Pokémon : combat, créatures, capture, sauvegarde.</p>
           <div class="project-card-tags">
             <span class="tag">Unity</span>
             <span class="tag">C#</span>
-            <span class="tag">Multijoueur</span>
+            <span class="tag">Framework</span>
           </div>
           <div class="project-card-links">
-            <a href="#" class="btn secondary-sm" data-modal-trigger="unity-coop" data-i18n="projects.btn_details">Détails</a>
+            <a href="#" class="btn secondary-sm" data-modal-trigger="pokemon-framework" data-i18n="projects.btn_details">Détails</a>
+          </div>
+        </div>
+
+        <div class="project-card compact" data-project-id="pokemon-fangame">
+          <div class="project-card-badge" data-i18n="projects.badge_active">Actif</div>
+          <h4 data-i18n="projects.pokemon_fangame.name">Fangame Pokémon</h4>
+          <p data-i18n="projects.pokemon_fangame.short">Mon fangame Pokémon personnel, développé sur Unity à partir de mon propre framework.</p>
+          <div class="project-card-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Fangame</span>
+          </div>
+          <div class="project-card-links">
+            <a href="#" class="btn secondary-sm" data-modal-trigger="pokemon-fangame" data-i18n="projects.btn_details">Détails</a>
           </div>
         </div>
 
@@ -107,7 +129,7 @@
             <span class="tag">48h</span>
           </div>
           <div class="project-card-links">
-            <a href="https://ky0h0.itch.io/maskarena" target="_blank" class="btn primary" data-i18n="projects.btn_see_itchio">Voir sur itch.io</a>
+            <a href="https://ky0h0.itch.io/maskarena" target="_blank" rel="noopener noreferrer" class="btn primary" data-i18n="projects.btn_see_itchio">Voir sur itch.io</a>
             <a href="#" class="btn secondary-sm" data-modal-trigger="maskarena" data-i18n="projects.btn_details">Détails</a>
           </div>
         </div>
@@ -185,7 +207,7 @@
               <span class="tech-tag">Équipe de 6</span>
             </div>
             <div class="project-links">
-              <a href="https://ky0h0.itch.io/maskarena" target="_blank" data-i18n="projects.maskarena.play_link">🎮 Jouer sur itch.io</a>
+              <a href="https://ky0h0.itch.io/maskarena" target="_blank" rel="noopener noreferrer" data-i18n="projects.maskarena.play_link">🎮 Jouer sur itch.io</a>
             </div>
           </div>
         </div>
@@ -215,35 +237,60 @@
               <span class="tech-tag">i18n</span>
             </div>
             <div class="project-links">
-              <a href="https://fizzeydev.github.io/PokemonUniteDraft/" target="_blank" data-i18n="projects.btn_see_site">Voir le site</a>
-              <a href="https://github.com/FizzeyDev/PokemonUniteDraft" target="_blank">GitHub</a>
+              <a href="https://fizzeydev.github.io/PokemonUniteDraft/" target="_blank" rel="noopener noreferrer" data-i18n="projects.btn_see_site">Voir le site</a>
+              <a href="https://github.com/FizzeyDev/PokemonUniteDraft" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal" id="modal-unity-coop">
+    <div class="modal" id="modal-pokemon-framework">
       <div class="modal-content">
         <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
         <div class="modal-header">
-          <h4 data-i18n="projects.unity_coop.name">Projet Unity Coop <span class="modal-wip-badge" data-i18n="projects.unity_coop.wip_badge">En développement</span></h4>
-          <div class="modal-badge" data-i18n="projects.unity_coop.badge">Projet Personnel · À venir sur Steam</div>
+          <h4 data-i18n="projects.pokemon_framework.name">Pokémon Unity Framework <span class="modal-wip-badge" data-i18n="projects.pokemon_framework.wip_badge">En développement</span></h4>
+          <div class="modal-badge" data-i18n="projects.pokemon_framework.badge">Projet Personnel · En développement</div>
         </div>
         <div class="modal-body modal-body--solo">
           <div class="modal-details">
             <div class="project-description">
-              <p data-i18n="projects.unity_coop.desc1"></p>
-              <p data-i18n="projects.unity_coop.desc2"></p>
-              <p data-i18n="projects.unity_coop.desc3"></p>
+              <p data-i18n="projects.pokemon_framework.desc1"></p>
+              <p data-i18n="projects.pokemon_framework.desc2"></p>
+              <p data-i18n="projects.pokemon_framework.desc3"></p>
             </div>
             <div class="modal-tech-stack">
               <span class="tech-tag">Unity</span>
               <span class="tech-tag">C#</span>
-              <span class="tech-tag">Multijoueur</span>
-              <span class="tech-tag">Steam</span>
+              <span class="tech-tag">Framework</span>
+              <span class="tech-tag">Open-source</span>
             </div>
-            <p class="repo-private-note" data-i18n="projects.wip_steam">🚧 Projet en cours de conception - Steam page à venir</p>
+            <p class="repo-private-note" data-i18n="projects.wip_generic">🚧 Projet en cours de développement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-pokemon-fangame">
+      <div class="modal-content">
+        <span class="modal-close" data-i18n="projects.modal_close_label" data-i18n-attr="aria-label">Fermer</span>
+        <div class="modal-header">
+          <h4 data-i18n="projects.pokemon_fangame.name">Fangame Pokémon <span class="modal-wip-badge" data-i18n="projects.pokemon_fangame.wip_badge">En développement</span></h4>
+          <div class="modal-badge" data-i18n="projects.pokemon_fangame.badge">Projet Personnel · En développement</div>
+        </div>
+        <div class="modal-body modal-body--solo">
+          <div class="modal-details">
+            <div class="project-description">
+              <p data-i18n="projects.pokemon_fangame.desc1"></p>
+              <p data-i18n="projects.pokemon_fangame.desc2"></p>
+              <p data-i18n="projects.pokemon_fangame.desc3"></p>
+            </div>
+            <div class="modal-tech-stack">
+              <span class="tech-tag">Unity</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Fangame</span>
+            </div>
+            <p class="repo-private-note" data-i18n="projects.wip_generic">🚧 Projet en cours de développement</p>
           </div>
         </div>
       </div>
@@ -273,7 +320,7 @@
             </div>
             <div class="project-links">
               <a href="https://mega.nz/file/tNBxHJTZ#_a3Efl-kOxeu3JKpo1m79A7cNCCtZ4Ji0Y-xAHPMxjo" download data-i18n="projects.little_monsters.build_windows">Build Windows</a>
-              <a href="https://github.com/Alexis-Arduca/MonsterProject" target="_blank" data-i18n="projects.little_monsters.see_code">Voir le code</a>
+              <a href="https://github.com/Alexis-Arduca/MonsterProject" target="_blank" rel="noopener noreferrer" data-i18n="projects.little_monsters.see_code">Voir le code</a>
             </div>
           </div>
         </div>
@@ -305,7 +352,7 @@
             <div class="project-links">
               <a href="https://mega.nz/file/AYoHQKBa#zL8khlhSUmtNPt_YVQxY-xyde-9HLObSseonTUIirow" download data-i18n="projects.shenanigans.build_windows">Build Windows</a>
               <a href="https://mega.nz/file/QYhHCJaY#OZ3ZEqEfiadnK_NSL11ODzogTJnRiVCfqyzDQLAQ8tQ" download data-i18n="projects.shenanigans.build_android">Build Android</a>
-              <a href="https://github.com/Alexis-Arduca/Shenanigans" target="_blank" data-i18n="projects.shenanigans.see_code">Voir le code</a>
+              <a href="https://github.com/Alexis-Arduca/Shenanigans" target="_blank" rel="noopener noreferrer" data-i18n="projects.shenanigans.see_code">Voir le code</a>
             </div>
           </div>
         </div>
@@ -336,7 +383,7 @@
             </div>
             <div class="project-links">
               <a href="https://mega.nz/file/FBxlSQ7I#Kn7697fwo9rU5vl-lOkMgHGGi_ZnakL9k4C7NRB35EA" download data-i18n="projects.chasing_echoes.build_windows">Build Windows</a>
-              <a href="https://github.com/Alexis-Arduca/Project-Start-Up" target="_blank" data-i18n="projects.chasing_echoes.see_code">Voir le code</a>
+              <a href="https://github.com/Alexis-Arduca/Project-Start-Up" target="_blank" rel="noopener noreferrer" data-i18n="projects.chasing_echoes.see_code">Voir le code</a>
             </div>
           </div>
         </div>

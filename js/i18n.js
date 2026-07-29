@@ -70,6 +70,13 @@ function renderSwitcher(currentLang, onSwitch) {
   });
 }
 
+// Tracks the most recent translations/lang so components that mount after
+// the initial i18n pass (e.g. the navbar, injected via an async fetch) can
+// translate themselves on demand instead of racing DOMContentLoaded.
+let _lastTranslations = null;
+let _lastLang = null;
+let _switchToFn = null;
+
 async function initI18n(pageTitleKey = '') {
   let currentLang = resolveInitialLang();
 
@@ -77,6 +84,8 @@ async function initI18n(pageTitleKey = '') {
     try {
       const translations = await loadTranslations(lang);
       currentLang = lang;
+      _lastLang = lang;
+      _lastTranslations = translations;
       localStorage.setItem('lang', lang);
       applyTranslations(translations);
       applyMetadata(translations, lang, pageTitleKey);
@@ -88,8 +97,18 @@ async function initI18n(pageTitleKey = '') {
     }
   }
 
+  _switchToFn = switchTo;
   await switchTo(currentLang);
 }
+
+// Public hook: call this after injecting any HTML that contains [data-i18n]
+// elements or a #lang-switcher container (e.g. from navbar.js's fetch callback).
+// It re-applies the last known translations without re-fetching anything.
+window.reapplyI18nUI = function () {
+  if (!_lastTranslations) return;
+  applyTranslations(_lastTranslations);
+  if (_switchToFn) renderSwitcher(_lastLang, _switchToFn);
+};
 
 if (typeof module !== 'undefined') {
   module.exports = { initI18n, loadTranslations, applyTranslations };

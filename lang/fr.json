@@ -18,9 +18,6 @@
     "card_who_title": "Qui suis-je",
     "card_who_desc": "Je suis Alexis, étudiant en 5ème année à Epitech, passionné par le développement de jeux vidéo et les technologies innovantes. Découvrez mes compétences !",
     "card_who_btn": "En savoir plus",
-    "card_internship_title": "Recherche de stage",
-    "card_internship_desc": "Actuellement à la recherche d'un stage à temps plein, de début Mars 2026 jusqu'à fin Août 2026 dans le domaine du développement de jeu vidéo de préférence !",
-    "card_internship_btn": "Me contacter",
     "featured_title": "Projet en vedette",
     "featured_project_title": "Little Monsters",
     "featured_project_desc1": "Projet développé sur Unity par un groupe de 6 personnes durant mon année à Saxion University of Applied Sciences, aux Pays-Bas, dans le cadre du module Project Show-Off.",
@@ -47,8 +44,10 @@
     "journey_seedship_text": "Au cours de ma 3ème année, j'ai effectué un stage chez The Seed Shop à Montpellier en tant que développeur full stack et devops. Je travaillais avec un autre étudiant d'Epitech sur un projet de lancement pour la boite en utilisant des outils tels que Joomla, Laravel, Docker et d'autres.",
     "journey_socle_title": "Stage chez Socle AI (Octobre 2025 - Février 2026)",
     "journey_socle_text": "Depuis le début de ma 5ᵉ année, j'effectue un stage chez Socle AI en tant que développeur IA full stack. J'ai réalisé de nombreuses tâches en lien avec l'IA et j'ai pu réalisé entièrement un Hackaton IA pour des étudiants d'Epitech Paris en utilisant Unity WebGL. Ce hackaton était un jeu de plateau laissant des agents s'affronter.",
-    "journey_cgi_title": "Stage chez CGI Montpellier (Aujourd'hui - Octobre 2026)",
-    "journey_cgi_text": "Stage de fin d'étude. En cours.",
+    "journey_cgi_title": "Stage chez CGI Montpellier (Octobre 2025 - Mi-Octobre 2026)",
+    "journey_cgi_text": "Stage de fin d'étude en tant que développeur intégration, où je conçois des flux MuleSoft répondant aux exigences clients et aux tickets qui me sont assignés, en m'appuyant notamment sur DataWeave pour la transformation de données. Je contribue également à un projet interne et participe activement aux réunions d'équipe et de suivi client.",
+    "journey_cdi_title": "CDI chez CGI Montpellier (À partir de Mi-Octobre 2026)",
+    "journey_cdi_text": "Poursuite de mon stage de fin d'étude par un CDI chez CGI Montpellier.",
     "skills_title": "Mes Compétences",
     "skills_intro": "Étudiant à Epitech depuis bientôt cinq ans, j'ai acquis de nombreuses compétences dans divers langages et outils de programmation.",
     "skill_c_desc": "Programmation bas niveau et gestion de la mémoire pour des projets performants.",
@@ -57,6 +56,7 @@
     "skill_unity_desc": "Création de jeux vidéo immersifs et de prototypes interactifs.",
     "skill_docker_desc": "Conteneurisation d'applications pour un déploiement efficace et une gestion simplifiée des environnements.",
     "skill_python_desc": "Scripting, automatisation et développement d'applications polyvalentes.",
+    "skill_mulesoft_desc": "Intégration d'applications et transformation de données via MuleSoft (Anypoint Platform) et le langage DataWeave.",
     "tools_title": "Outils & Environnement",
     "tools_intro": "Au-delà des langages, voici les outils qui font partie de mon quotidien de développeur :",
     "tool_git_desc": "Versioning, branches, pull requests",
@@ -85,14 +85,7 @@
     "learning_perso_title": "Projets perso",
     "learning_perso_text": "Développement de petits outils et jeux en dehors des études pour pratiquer librement et explorer de nouvelles idées sans contraintes académiques.",
     "learning_design_title": "Game Design",
-    "learning_design_text": "Approfondissement des principes de game feel, de level design et d'équilibrage pour mieux comprendre les mécaniques qui rendent un jeu amusant.",
-    "internship_title": "Recherche de Stage",
-    "internship_intro": "Actuellement en 5e année à Epitech, je suis à la recherche d'un stage à temps plein. Voici les détails :",
-    "internship_card_title": "Stage à temps plein",
-    "internship_card_text1": "Stage de fin d'étude à temps plein, d'une durée de 6 mois de Mars à Août 2026.",
-    "internship_card_text2": "Je recherche un stage dans le développement Jeu Vidéo.",
-    "internship_cta": "Me contacter pour une opportunité",
-    "internship_cv": "Télécharger mon CV"
+    "learning_design_text": "Approfondissement des principes de game feel, de level design et d'équilibrage pour mieux comprendre les mécaniques qui rendent un jeu amusant."
   },
   "contact": {
     "title": "Contact - Alexis",
@@ -103,7 +96,7 @@
     "linkedin_title": "LinkedIn",
     "cv_fr_title": "CV (FR)",
     "cv_fr_link": "Télécharger le CV français",
-    "availability": "Disponible pour un stage à temps plein · Mars – Août 2026"
+    "availability": "En stage chez CGI jusqu'à mi-octobre 2026, poursuite en CDI"
   },
   "projects": {
     "title": "Mes Projets - Alexis",
@@ -120,7 +113,6 @@
     "cat_cpp": "Projets C/C++",
     "badge_active": "Actif",
     "badge_soon": "Bientôt",
-    "badge_coming_steam": "À venir · Steam",
     "badge_2plus": "+2 autres jams",
     "badge_ggj2026": "Global Game Jam 2026",
     "btn_learn_more": "En savoir plus",
@@ -129,6 +121,7 @@
     "btn_see_itchio": "Voir sur itch.io",
     "repo_private": "⚠ Dépôt privé - disponible sur demande",
     "wip_steam": "🚧 Projet en cours de conception - Steam page à venir",
+    "wip_generic": "🚧 Projet en cours de développement",
     "modal_close_label": "Fermer",
     "unitetools": {
       "name": "Unite Tools",
@@ -139,14 +132,23 @@
       "desc4": "Disponible en 5 langues : Français, Anglais, Allemand, Espagnol, Italien.",
       "short": "Site web dédié à Pokémon Unite : simulateur de draft, créateur de tierlist, calculateur de dégâts et plus encore. Projet fan-made maintenu à jour."
     },
-    "unity_coop": {
-      "name": "Jeu Coop Unity",
-      "badge": "Projet Personnel · À venir sur Steam",
+    "pokemon_framework": {
+      "name": "Pokémon Unity Framework",
+      "badge": "Projet Personnel · En développement",
       "wip_badge": "En développement",
-      "desc1": "Jeu multijoueur coopératif en équipe développé sur Unity, actuellement en phase de conception. L'objectif est de créer une expérience fun et accessible, pensée pour être jouée entre amis.",
-      "desc2": "Ce projet est avant tout une aventure personnelle de long terme - concevoir, développer et publier un jeu complet sur Steam de manière indépendante, en gérant seul l'ensemble du cycle de développement.",
+      "desc1": "Un framework Unity open-source pensé pour aider d'autres développeurs à créer plus facilement leurs propres jeux inspirés de Pokémon : système de combat au tour par tour, gestion des créatures, capture, inventaire, sauvegarde...",
+      "desc2": "L'objectif est de poser des bases solides et réutilisables - architecture, systèmes core - pour que d'autres devs puissent se concentrer sur le contenu de leur jeu plutôt que sur la plomberie technique.",
+      "desc3": "Ce framework sert aussi de socle à mon propre fangame, développé en parallèle.",
+      "short": "Framework Unity open-source pour aider d'autres développeurs à créer leurs jeux inspirés de Pokémon (combat, créatures, capture, sauvegarde)."
+    },
+    "pokemon_fangame": {
+      "name": "Fangame Pokémon",
+      "badge": "Projet Personnel · En développement",
+      "wip_badge": "En développement",
+      "desc1": "Mon propre fangame Pokémon, développé sur Unity en m'appuyant sur mon framework personnel. L'objectif est de proposer une expérience originale tout en explorant en profondeur les mécaniques du genre.",
+      "desc2": "Ce projet me permet de valider en conditions réelles les choix d'architecture du framework, tout en travaillant le game design, l'écriture et la direction artistique d'un jeu complet.",
       "desc3": "Plus de détails à venir au fur et à mesure de l'avancement du projet.",
-      "short": "Jeu multijoueur coopératif fun en équipe, actuellement en conception. Objectif : publication sur Steam."
+      "short": "Mon fangame Pokémon personnel, développé sur Unity à partir de mon propre framework."
     },
     "wip_card": {
       "title": "Projet en cours...",

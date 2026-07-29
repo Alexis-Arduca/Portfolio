@@ -18,9 +18,6 @@
     "card_who_title": "Who am I",
     "card_who_desc": "I'm Alexis, a 5th-year student at Epitech, passionate about video game development and innovative technologies. Discover my skills!",
     "card_who_btn": "Learn more",
-    "card_internship_title": "Looking for an internship",
-    "card_internship_desc": "Currently looking for a full-time internship from early March 2026 until the end of August 2026, preferably in the video game development field!",
-    "card_internship_btn": "Contact me",
     "featured_title": "Featured Project",
     "featured_project_title": "Little Monsters",
     "featured_project_desc1": "A Unity project developed by a team of 6 during my year at Saxion University of Applied Sciences in the Netherlands, as part of the Project Show-Off module.",
@@ -47,8 +44,10 @@
     "journey_seedship_text": "During my 3rd year, I completed an internship at The Seed Shop in Montpellier as a full-stack developer and DevOps. I worked with another Epitech student on a product launch project using tools such as Joomla, Laravel, Docker, and others.",
     "journey_socle_title": "Internship at Socle AI (October 2025 - February 2026)",
     "journey_socle_text": "Since the start of my 5th year, I have been interning at Socle AI as a full-stack AI developer. I carried out many AI-related tasks and fully built an AI Hackathon for Epitech Paris students using Unity WebGL - a board game where AI agents compete against each other.",
-    "journey_cgi_title": "Internship at CGI Montpellier (Today - October 2026)",
-    "journey_cgi_text": "End-of-study internship. Ongoing.",
+    "journey_cgi_title": "Internship at CGI Montpellier (October 2025 - Mid-October 2026)",
+    "journey_cgi_text": "End-of-study internship as an integration developer, where I design MuleSoft flows that meet client requirements and assigned tickets, relying notably on DataWeave for data transformation. I also contribute to an internal project and actively take part in team and client follow-up meetings.",
+    "journey_cdi_title": "Permanent position at CGI Montpellier (From Mid-October 2026)",
+    "journey_cdi_text": "Continuing on from my end-of-study internship with a permanent position at CGI Montpellier.",
     "skills_title": "My Skills",
     "skills_intro": "After almost five years at Epitech, I have acquired strong skills across various programming languages and tools.",
     "skill_c_desc": "Low-level programming and memory management for high-performance projects.",
@@ -57,6 +56,7 @@
     "skill_unity_desc": "Creation of immersive video games and interactive prototypes.",
     "skill_docker_desc": "Application containerization for efficient deployment and simplified environment management.",
     "skill_python_desc": "Scripting, automation, and versatile application development.",
+    "skill_mulesoft_desc": "Application integration and data transformation using MuleSoft (Anypoint Platform) and the DataWeave language.",
     "tools_title": "Tools & Environment",
     "tools_intro": "Beyond languages, here are the tools that are part of my daily developer workflow:",
     "tool_git_desc": "Versioning, branches, pull requests",
@@ -85,14 +85,7 @@
     "learning_perso_title": "Personal Projects",
     "learning_perso_text": "Building small tools and games outside of studies to practice freely and explore new ideas without academic constraints.",
     "learning_design_title": "Game Design",
-    "learning_design_text": "Deepening knowledge of game feel, level design, and balancing principles to better understand the mechanics that make a game fun.",
-    "internship_title": "Looking for an Internship",
-    "internship_intro": "Currently in my 5th year at Epitech, I am looking for a full-time internship. Here are the details:",
-    "internship_card_title": "Full-time internship",
-    "internship_card_text1": "End-of-studies full-time internship, 6 months from March to August 2026.",
-    "internship_card_text2": "I am looking for an internship in video game development.",
-    "internship_cta": "Contact me for an opportunity",
-    "internship_cv": "Download my CV"
+    "learning_design_text": "Deepening knowledge of game feel, level design, and balancing principles to better understand the mechanics that make a game fun."
   },
   "contact": {
     "title": "Contact - Alexis",
@@ -103,7 +96,7 @@
     "linkedin_title": "LinkedIn",
     "cv_fr_title": "CV (FR)",
     "cv_fr_link": "Download French CV",
-    "availability": "Available for a full-time internship · March – August 2026"
+    "availability": "Currently interning at CGI until mid-October 2026, continuing on as a permanent employee"
   },
   "projects": {
     "title": "My Projects - Alexis",
@@ -120,7 +113,6 @@
     "cat_cpp": "C/C++ Projects",
     "badge_active": "Active",
     "badge_soon": "Soon",
-    "badge_coming_steam": "Coming · Steam",
     "badge_2plus": "+2 more jams",
     "badge_ggj2026": "Global Game Jam 2026",
     "btn_learn_more": "Learn more",
@@ -129,6 +121,7 @@
     "btn_see_itchio": "View on itch.io",
     "repo_private": "⚠ Private repository - available on request",
     "wip_steam": "🚧 Project in design phase - Steam page coming soon",
+    "wip_generic": "🚧 Project currently in development",
     "modal_close_label": "Close",
     "unitetools": {
       "name": "Unite Tools",
@@ -139,14 +132,23 @@
       "desc4": "Available in 5 languages: French, English, German, Spanish, Italian.",
       "short": "A website dedicated to Pokémon Unite: draft simulator, tierlist creator, damage calculator and more. Fan-made project kept up to date."
     },
-    "unity_coop": {
-      "name": "Unity Coop Game",
-      "badge": "Personal Project · Coming to Steam",
+    "pokemon_framework": {
+      "name": "Pokémon Unity Framework",
+      "badge": "Personal Project · In Development",
       "wip_badge": "In Development",
-      "desc1": "A cooperative multiplayer game built in Unity, currently in the design phase. The goal is to create a fun and accessible experience designed to be played with friends.",
-      "desc2": "This project is primarily a long-term personal adventure - designing, developing, and releasing a full game on Steam independently, managing the entire development cycle on my own.",
+      "desc1": "An open-source Unity framework designed to help other developers build their own Pokémon-inspired games more easily: turn-based battle system, creature management, capture, inventory, save system...",
+      "desc2": "The goal is to lay down a solid, reusable foundation - architecture, core systems - so other devs can focus on their game's content instead of the technical plumbing.",
+      "desc3": "This framework also serves as the base for my own fangame, being developed alongside it.",
+      "short": "Open-source Unity framework to help other developers build their own Pokémon-inspired games (battles, creatures, capture, save system)."
+    },
+    "pokemon_fangame": {
+      "name": "Pokémon Fangame",
+      "badge": "Personal Project · In Development",
+      "wip_badge": "In Development",
+      "desc1": "My own Pokémon fangame, built in Unity on top of my personal framework. The goal is to deliver an original experience while digging deep into the genre's mechanics.",
+      "desc2": "This project lets me validate the framework's architecture choices in a real-world setting, while also working on game design, writing, and art direction for a complete game.",
       "desc3": "More details to come as the project progresses.",
-      "short": "Fun cooperative multiplayer game currently in design. Target: Steam release."
+      "short": "My personal Pokémon fangame, built in Unity on top of my own framework."
     },
     "wip_card": {
       "title": "Project in progress...",
